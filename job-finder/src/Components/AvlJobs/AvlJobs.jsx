@@ -19,6 +19,11 @@ export default function AvlJobs() {
 
       <div className={classes.avlList}>
         <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
       </div>
 
 

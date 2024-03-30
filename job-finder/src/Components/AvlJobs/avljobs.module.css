@@ -48,5 +48,7 @@ nav button{
   padding: 1rem 4rem;
   display: flex;
   flex-direction: row;
+  row-gap: 4rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }

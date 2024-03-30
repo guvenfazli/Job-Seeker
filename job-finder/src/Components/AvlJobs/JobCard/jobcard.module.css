@@ -2,7 +2,8 @@
 
 
 .card {
-  width: 33%;
+  width: 25%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -15,7 +16,6 @@
 .companyInfo{
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
   padding: 2.5rem 0.5rem;
   align-items: flex-start;
   justify-content: space-between;
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .companyTitle {
@@ -62,6 +62,7 @@
 .jobInfo{
   display: flex;
   flex-direction: column;
+  padding: 1.2rem 0rem;
 }
 
 .jobInfo p{
