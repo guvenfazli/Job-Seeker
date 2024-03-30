@@ -4,6 +4,7 @@ import Company from "../Components/Companies/Company"
 import Stats from "../Components/Stats/Stats"
 import About from "../Components/About/About"
 import AboutSummary from "../Components/AboutSummary/AboutSummary"
+import JobSearch from "../Components/JobSearch/JobSearch"
 
 export default function HomePage(){
   return (
@@ -14,6 +15,7 @@ export default function HomePage(){
       <Stats />
       <About />
       <AboutSummary />
+      <JobSearch />
     
     
     </>

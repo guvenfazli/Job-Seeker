@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.jobSearch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Noto Sans", sans-serif;
+  border: 1px solid red;
+  padding: 4rem 0rem;
+}
+
+.jobSearch h1{
+  color: #37005F;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+.jobSearch p{
+  color: #706D6E;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.searchBars{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 3px solid #6E00BE;
+  border-radius: 5rem;
+}
+
+.searchBars input{
+  width: 35rem;
+  height: 3rem;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  padding-left: 1rem;
+  border: none;
+}
+
+.searchBars button{
+  background-color: #6E00BE;
+  padding: 1rem;
+  width: 10rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBars img{
+  margin-right: 1rem;
+}
