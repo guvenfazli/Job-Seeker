@@ -9,9 +9,6 @@ import slack from "../../Assets/CompanyAssets/Slack.png"
 
 
 
-
-
-
 export default function Company(){
   return (
     <section className={classes.company}>
