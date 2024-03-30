@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5rem 0rem;
+}
+
+.purpleCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4rem 6rem;
+  padding-right: 2rem;
+  background-color: #6E00BE;
+  font-family: "Noto Sans", sans-serif;
+  border-top-left-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+
+}
+
+.foundIt{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem;
+  border-radius: 5rem;
+  margin-right: 4rem;
+}
+
+.joinInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.joinInfo h4{
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 400;
+  color: white;
+}
+
+.joinInfo p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6rem;
+  color: white;
+}
+
+.joinInfo div{
+  display: flex;
+}
+
+.joinInfo div button{
+  padding: 0.5rem 1rem;
+  border: 1px solid #FFA000;
+  background: none;
+  font-size: 16px;
+  color: #FFA000;
+  font-family: "Noto Sans", sans-serif;
+  margin-right: 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

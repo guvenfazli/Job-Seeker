@@ -32,8 +32,12 @@ nav button{
   border-radius: 2rem;
   margin-left: 2rem;
   color: white;
+  font-family: "Noto Sans", sans-serif;
+
   cursor: pointer;
   background-color: #6E00BE;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .avlTitle h4{

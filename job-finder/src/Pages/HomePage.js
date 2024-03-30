@@ -7,7 +7,7 @@ import AboutSummary from "../Components/AboutSummary/AboutSummary"
 import JobSearch from "../Components/JobSearch/JobSearch"
 import Popular from "../Components/Popular/Popular"
 import AvlJobs from "../Components/AvlJobs/AvlJobs"
-
+import Join from "../Components/Join/Join"
 
 
 export default function HomePage(){
@@ -22,7 +22,7 @@ export default function HomePage(){
       <JobSearch />
       <Popular />
       <AvlJobs />
-    
+      <Join />
     
     </>
   )
