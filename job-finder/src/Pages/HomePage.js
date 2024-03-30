@@ -8,7 +8,7 @@ import JobSearch from "../Components/JobSearch/JobSearch"
 import Popular from "../Components/Popular/Popular"
 import AvlJobs from "../Components/AvlJobs/AvlJobs"
 import Join from "../Components/Join/Join"
-
+import Footer from "../Components/Footer/Footer"
 
 export default function HomePage(){
   return (
@@ -23,6 +23,7 @@ export default function HomePage(){
       <Popular />
       <AvlJobs />
       <Join />
+      <Footer />
     
     </>
   )
