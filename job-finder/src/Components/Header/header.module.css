@@ -50,6 +50,7 @@ header nav button {
   font-weight: 600;
   font-family: "Noto Sans", sans-serif;
   cursor: pointer;
+  box-shadow: none;
 
 }
 
