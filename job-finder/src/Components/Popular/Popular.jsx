@@ -10,7 +10,7 @@ export default function Popular() {
         {populerList.map((row) => <Tags key={row.title} jobs={row.jobs} tags={row.title} />)}
 
       </div>
-      <button style={{fontSize: "20px", border: "none"}}>More Categories &rarr;</button>
+      <button style={{fontSize: "20px", border: "none", cursor: "pointer"}}>More Categories &rarr;</button>
     </section>
   )
 }

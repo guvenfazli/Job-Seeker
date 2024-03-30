@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: flex-start;
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 2rem;
+}
+
+.companyInfo{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  padding: 2.5rem 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1.5rem;
+}
+
+.primaryInfo{
+  display: flex;
+  flex-direction: row;
+}
+
+.companyImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.companyTitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.companyTitle p{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.companyInfo button{
+  padding: 0.4rem 1.6rem;
+  background: none;
+  border: 2px solid #6E00BE;
+  color: #6E00BE;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.jobInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.jobInfo p{
+  font-size: 24px;
+  margin: 10px 0px;
+  color: #37005F;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.applyJob{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobTime{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+
+}
+
+.jobTime img{
+  margin-right: 0.6rem;
+}
+
+.applyNow{
+  padding: 0.5rem 1.6rem;
+  background: none;
+  color: white;
+  background-color: #6E00BE;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+ 
+  font-family: "Noto Sans", sans-serif;
+}

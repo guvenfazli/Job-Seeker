@@ -14,6 +14,10 @@ export default function JobSearch(){
         <button><img src={search}/> Search</button>
       </div>
 
+      <div>
+        <p style={{marginBottom: "0px"}}>Search for jobs</p>
+      </div>
+
     </section>
   )
 }

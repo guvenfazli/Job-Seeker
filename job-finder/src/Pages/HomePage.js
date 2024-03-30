@@ -6,6 +6,10 @@ import About from "../Components/About/About"
 import AboutSummary from "../Components/AboutSummary/AboutSummary"
 import JobSearch from "../Components/JobSearch/JobSearch"
 import Popular from "../Components/Popular/Popular"
+import AvlJobs from "../Components/AvlJobs/AvlJobs"
+
+
+
 export default function HomePage(){
   return (
     <>
@@ -17,6 +21,7 @@ export default function HomePage(){
       <AboutSummary />
       <JobSearch />
       <Popular />
+      <AvlJobs />
     
     
     </>

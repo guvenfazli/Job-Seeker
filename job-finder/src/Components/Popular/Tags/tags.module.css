@@ -8,8 +8,8 @@
   align-items: center;
   font-family: "Noto Sans", sans-serif;
   background: none;
-  padding: 0.5rem;
-  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
   justify-content: space-between;
   cursor: pointer;
 }
@@ -23,8 +23,9 @@
 
 .tag span{
   padding: 0.2rem;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   font-size: 12px;
+  width: 2.5rem;
 }
 
 .job{

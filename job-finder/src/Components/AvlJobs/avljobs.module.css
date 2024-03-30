@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.avlJobs{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid red;
+  background-color: rgb(226, 204, 242, 0.5);
+  font-family: "Noto Sans", sans-serif;
+
+}
+
+.avlTitle {
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.avlTitle div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav button{
+  border: 1px solid #6E00BE;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: #6E00BE;
+}
+
+.avlTitle h4{
+  font-size: 60px;
+  color: #37005F;
+  margin-bottom: 45px;
+}
+
+.avlTitle p{
+  color: gray;
+  font-size: 16px;
+}
+
+.avlList{
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
