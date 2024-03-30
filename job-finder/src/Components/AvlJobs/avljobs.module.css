@@ -5,10 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid red;
   background-color: rgb(226, 204, 242, 0.5);
   font-family: "Noto Sans", sans-serif;
-
+  padding-bottom: 2rem;
 }
 
 .avlTitle {
@@ -25,11 +24,15 @@
   justify-content: space-between;
 }
 
+
+
 nav button{
   border: 1px solid #6E00BE;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
+  margin-left: 2rem;
   color: white;
+  cursor: pointer;
   background-color: #6E00BE;
 }
 
@@ -51,4 +54,21 @@ nav button{
   row-gap: 4rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.allJobsButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allJobsButton button{
+  font-size: 18px;
+  color: black;
+  background: none;
+  border: none;
+  padding: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
 }

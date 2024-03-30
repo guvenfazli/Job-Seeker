@@ -26,7 +26,10 @@ export default function AvlJobs() {
         <JobCard />
       </div>
 
+      <div className={classes.allJobsButton}>
+        <button>Show All Jobs Arrow &rarr;</button>
 
+      </div>
     </section>
   )
 }

@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: flex-start;
   row-gap: 3rem;
+  padding-bottom: 2rem;
 }
 
 .title{
