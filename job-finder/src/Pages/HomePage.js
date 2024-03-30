@@ -5,7 +5,7 @@ import Stats from "../Components/Stats/Stats"
 import About from "../Components/About/About"
 import AboutSummary from "../Components/AboutSummary/AboutSummary"
 import JobSearch from "../Components/JobSearch/JobSearch"
-
+import Popular from "../Components/Popular/Popular"
 export default function HomePage(){
   return (
     <>
@@ -16,6 +16,7 @@ export default function HomePage(){
       <About />
       <AboutSummary />
       <JobSearch />
+      <Popular />
     
     
     </>

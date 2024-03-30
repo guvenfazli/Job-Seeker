@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 3rem;
+}
+
+.title{
+  color: #37005F;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+
+}
+
+
+.popular button {
+  background: none;
+  color: #37005F;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.tagList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+  row-gap: 3rem;
+  column-gap: 1rem;
+}

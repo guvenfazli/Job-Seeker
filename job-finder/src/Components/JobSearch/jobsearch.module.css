@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: flex-start;
   font-family: "Noto Sans", sans-serif;
-  border: 1px solid red;
   padding: 4rem 0rem;
 }
 
@@ -18,8 +17,9 @@
 
 .jobSearch p{
   color: #706D6E;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+  margin-bottom: 5rem;
 }
 
 .searchBars{
