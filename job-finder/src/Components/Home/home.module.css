@@ -33,7 +33,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-left: 2rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
@@ -47,8 +46,7 @@
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   background-color: #D9D9D9;
-  box-shadow: 0px 7px 5px 0.1px black;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -73,11 +71,9 @@
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   cursor: pointer;
-  box-shadow: 0px 7px 2px 0.1px black;
-}
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .homeRight{
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,8 +90,7 @@
   height: 55%;
   padding: 0 5rem;
   border-radius: 4rem;
-  box-shadow: 2px 4px 15px 1px black;
-}
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .logoHolder img{
   margin-bottom: 50px;

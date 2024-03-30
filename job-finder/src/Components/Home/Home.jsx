@@ -17,7 +17,7 @@ export default function Home() {
         <div className={classes.homeSearch}>
           <div className={classes.inputCont}>
             <img src={search} alt="search-icon" />
-            <input type="text" placeholder="Job title or keywords" />
+            <input style={{marginLeft: "1rem"}} type="text" placeholder="Job title or keywords" />
             <input type="text" placeholder="Country" />
 
           </div>

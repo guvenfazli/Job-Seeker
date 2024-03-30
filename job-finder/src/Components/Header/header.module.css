@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-header{
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.headerLeft{
+.headerLeft {
   display: flex;
   flex-direction: row;
 }
 
-.hambuMenu{
+.hambuMenu {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem 2rem;
 }
 
-.headerLogo{
+.headerLogo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,14 +34,14 @@ header{
 
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-nav button{
+nav button {
   background: none;
   border: none;
   color: #37005F;
@@ -74,6 +74,6 @@ nav button{
   cursor: pointer;
 }
 
-.signUp{
-  box-shadow: 0px 2px 5px 1px gray;
+.signUp {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
