@@ -19,7 +19,6 @@ export default function HomePage(){
 
   const data = useLoaderData();
 
-  console.log(data)
 
 
 
@@ -34,7 +33,7 @@ export default function HomePage(){
       <AboutSummary />
       <JobSearch />
       <Popular />
-      <AvlJobs />
+      <AvlJobs data={data} />
       <Join />
       <Footer />
     

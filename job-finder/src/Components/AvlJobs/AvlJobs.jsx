@@ -3,7 +3,12 @@ import JobCard from "./JobCard/JobCard"
 
 
 
-export default function AvlJobs() {
+export default function AvlJobs({data}) {
+
+  console.log(data)
+
+
+
   return (
     <section className={classes.avlJobs}>
       <div className={classes.avlTitle}>
@@ -18,12 +23,9 @@ export default function AvlJobs() {
       </div>
 
       <div className={classes.avlList}>
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
+        {data.data.map((job) => <JobCard key={job.job_id} job={job} />)}
+
+
       </div>
 
       <div className={classes.allJobsButton}>
