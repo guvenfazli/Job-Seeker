@@ -1,6 +1,6 @@
 import classes from "./header.module.css"
-import logo from "../../Assets/HeaderLogo.png"
-import hamburger from "../../Assets/Hamburger.png"
+import logo from "../../Assets/HeaderAssets/HeaderLogo.png"
+import hamburger from "../../Assets/HeaderAssets/Hamburger.png"
 
 export default function Header() {
   return (
