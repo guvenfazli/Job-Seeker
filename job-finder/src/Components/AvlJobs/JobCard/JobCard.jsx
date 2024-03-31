@@ -6,17 +6,19 @@ import calendar from "../../../Assets/JobCardAssets/Calendar.png"
 export default function JobCard({ job }) {
 
   const postedDaysAgo = calculateDate(job.job_posted_at_datetime_utc)
+  const companyImage = job.employer_logo
+  console.log(job)
 
   return (
     <div className={classes.card}>
       <div className={classes.companyInfo}>
         <div className={classes.primaryInfo}>
-          <div className={classes.companyImg}>
-            <img alt="company-logo" />
+          <div className={classes.companyImg} style={{backgroundImage: `url(${companyImage})`}}>
+            {!companyImage && "No Img"}
           </div>
           <div className={classes.companyTitle}>
             <p>{job.employer_name}</p>
-            <p>{job.job_city}, {job.job_country}</p>
+            <p>{job.job_city} {job.job_city && ","} {job.job_country}</p>
           </div>
         </div>
 
@@ -24,7 +26,7 @@ export default function JobCard({ job }) {
       </div>
 
       <div className={classes.jobInfo}>
-        <p>{job.job_job_title}</p>
+        <p>{job.job_title}</p>
         <p style={{ color: "black", fontSize: "12px", marginBottom: "20px" }}>{job.job_employment_type}</p>
       </div>
 

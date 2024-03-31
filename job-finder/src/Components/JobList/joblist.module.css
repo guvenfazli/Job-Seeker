@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .jobListSection{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  background-color: rgb(226, 204, 242, 0.5);
+}
+
+.titleContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title{
+  font-size: 36px;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
 }
 
 .jobList {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   width: 80%;
   row-gap: 3rem;
 

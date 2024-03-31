@@ -22,7 +22,7 @@ export async function fetchJobsByParams(params) {
 
   const searchValue = params.replaceAll(" ", "%20")
 
-  const response = await fetch(`https://jsearch.p.rapidapi.com/search?query=${searchValue}`, options);
+  const response = await fetch(`https://jsearch.p.rapidapi.com/search?query=${searchValue}&page=1`, options);
   const resData = await response.json()
   return resData;
 

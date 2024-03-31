@@ -6,25 +6,45 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
+  border-radius: 1rem;
   padding: 1rem;
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
 
+.job p{
+  margin-bottom: 5px;
 }
 
 .jobLeft{
   display: flex;
   flex-direction: row;
-  border: 1px solid blue;
 }
 
 
 
 .jobLeft div{
   margin-right: 1rem;
-  border: 1px solid pink;
+  display: flex;
   
+}
+
+.jobImg{
+  border-radius: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.jobLeft div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 4rem;
+
 }
 
 .jobDetails{
@@ -40,11 +60,11 @@
   justify-content: space-around;
 }
 
-.jobRight div button {
+.jobRight button {
   margin-left: 1rem;
   background-color: #6E00BE;
   border: none;
-  padding: 0.3rem 1rem;
+  padding: 0.7rem 2rem;
   border-radius: 1rem;
   color: white;
   cursor: pointer;

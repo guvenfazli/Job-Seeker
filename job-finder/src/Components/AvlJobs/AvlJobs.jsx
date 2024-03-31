@@ -45,12 +45,6 @@ export default function AvlJobs() {
     setFilteredData(filteredByPostTime)
   }
 
-
-
-
-
-
-
   return (
     <section className={classes.avlJobs}>
       <div className={classes.avlTitle}>
