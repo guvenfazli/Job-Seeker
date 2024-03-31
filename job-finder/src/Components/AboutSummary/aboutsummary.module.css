@@ -1,56 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.summary{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Noto Sans", sans-serif;
-
-}
-
-.showcase{
+.summary {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 2rem 0rem;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
-.card{
+.card {
   display: flex;
-  gap: 1rem;
   flex-direction: column;
   text-align: center;
-  align-items: center;
-  justify-content: flex-start;
   width: 30%;
-
 }
 
-.cardImg{
+.info {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
 }
 
-.cardImg img{
-  max-height: 9rem;
-  min-height: 10rem;
-  height: 100%;
+.statIcon {
+  border: 1px solid red;
+
 }
 
-.card h2{
+.title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
   color: #37005F;
-  font-size: 28px;
-  font-family: "Noto Sans", sans-serif;
-
 }
 
-.card p{
-  color: #706D6E;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
+.desc {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
   font-weight: 500;
+  color: gray;
 }
 
+@media (max-width: 700px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 470px) {
+
+  .summary {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}

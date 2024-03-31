@@ -1,3 +1,10 @@
+import adobe from "../Assets/CompanyAssets/Adobe.png"
+import amazon from "../Assets/CompanyAssets/Amazon.png"
+import google from "../Assets/CompanyAssets/Google.png"
+import microsoft from "../Assets/CompanyAssets/Microsoft.png"
+import paypal from "../Assets/CompanyAssets/Paypal.png"
+import slack from "../Assets/CompanyAssets/Slack.png"
+
 export const populerList = [
   {title: "Fullstack Developer", jobs: 552},
   {title: "UI/UX Designer", jobs: 450},
@@ -13,4 +20,13 @@ export const populerList = [
   {title: "Java Developer", jobs: 85},
   {title: "Content Creator", jobs: 76},
   {title: "Translator", jobs: 66}
+]
+
+export const companyList = [
+  {name: "Adobe", img: adobe},
+  {name: "Amazon", img: amazon},
+  {name: "Google", img: google},
+  {name: "Microsoft", img: microsoft},
+  {name: "Paypal", img: paypal},
+  {name: "Slack", img: slack}
 ]

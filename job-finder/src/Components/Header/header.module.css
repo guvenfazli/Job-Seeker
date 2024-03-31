@@ -3,78 +3,107 @@
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
 .headerLeft {
   display: flex;
   flex-direction: row;
-}
-
-.hambuMenu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 2rem;
+  padding-left: 1rem;
 }
 
 .headerLogo {
+  background-color: #6E00BE;
+  padding: 2rem;
   display: flex;
   align-items: center;
+}
+
+.headerMiddle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 2.5rem 2rem;
-  background-color: #6E00BE;
 }
 
 .headerRight {
   display: flex;
-  flex-direction: row;
-  padding-right: 2rem;
-
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 1rem;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-header nav button {
+.headerMiddle button {
   background: none;
   border: none;
-  color: #37005F;
-  font-size: 16px;
-  margin-left: 2rem;
-  font-weight: 600;
-  font-family: "Noto Sans", sans-serif;
-  cursor: pointer;
-  box-shadow: none;
-
-}
-
-.account {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5rem;
-  gap: 15px;
-}
-
-.account button {
-  padding: 0.7rem 1.2rem;
-  width: 150px;
-  border: none;
-  border-radius: 1rem;
   font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #37005F;
+  font-weight: 600;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.headerRight button {
   background-color: #6E00BE;
   color: white;
-  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+
 }
 
-.signUp {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+@media (max-width: 720px) {
+  .headerMiddle button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #37005F;
+    font-weight: 600;
+    margin: 0 1rem;
+  }
+
+  .headerRight button {
+    background-color: #6E00BE;
+    color: white;
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .headerLogo {
+    padding: 0.5rem
+  }
+}
+
+@media (max-width: 410px) {
+  .headerRight{
+    display: none;
+  }
+}
+
+@media (max-width: 360px){
+  .headerMiddle button {
+    margin: 0rem;
+  }
+
+
+}
+
+@media (max-width: 330px){
+  .headerLogo {
+    padding: 0rem
+  }
 }

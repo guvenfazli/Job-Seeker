@@ -1,64 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.jobSearch{
+.jobSearch {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: "Noto Sans", sans-serif;
-  padding: 4rem 0rem;
+  padding: 1rem;
+  text-align: center;
 }
 
-.jobSearch h1{
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title p {
   color: #37005F;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 60px;
-  margin-top: 0px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.jobSearch p{
-  color: #706D6E;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 5rem;
+.desc {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.searchBars{
+.desc p {
+  color: gray;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.searchSec {
+  display: flex;
+  justify-content: center;
+}
+
+.inputCont {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  border: 3px solid #6E00BE;
+  width: 60%;
+  border: 2px solid #6E00BE;
   border-radius: 5rem;
+  padding: 0.5rem;
 }
 
-.searchBars input{
-  width: 35rem;
+.inputCont input {
   height: 3rem;
-  outline: none;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: gray;
+  width: 100%;
   padding-left: 1rem;
   border: none;
+  color: gray;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  outline: none;
 }
 
-.searchBars button{
-  background-color: #6E00BE;
-  padding: 1rem;
-  width: 10rem;
-  border: none;
-  border-radius: 2rem;
-  color: white;
-  font-size: 16px;
-  font-family: "Noto Sans", sans-serif;
-  cursor: pointer;
+.inputCont button {
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #6E00BE;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  
+
 }
 
-.searchBars img{
-  margin-right: 1rem;
+@media (max-width: 800px) {
+
+
+
+  .inputCont {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .title p {
+    font-size: 56px;
+  }
+
+
+}
+
+
+@media (max-width: 720px) {
+  .title p {
+    font-size: 50px;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .inputCont button {
+    width: 40%;
+    font-size: 12px;
+    border-radius: 3rem;
+    padding: 0px 2px;
+
+  }
+}
+
+@media (max-width: 600px) {
+
+  .title p {
+    font-size: 48px;
+  }
+
+  .inputCont {
+    padding: 0.5rem;
+  }
+
+  .inputCont {
+    width: 100%;
+  }
+
+  .inputCont input {
+    height: 2rem;
+    width: 100%;
+    padding-left: 1rem;
+    border: none;
+    color: gray;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    outline: none;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .title p {
+    font-size: 40px;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title p {
+    font-size: 36px;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 435px) {
+  .title p {
+    font-size: 32px;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title p {
+    font-size: 30px;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .inputCont button {
+    width: 40%;
+    font-size: 12px;
+    border-radius: 3rem;
+    padding: 0px 10px;
+
+  }
 }

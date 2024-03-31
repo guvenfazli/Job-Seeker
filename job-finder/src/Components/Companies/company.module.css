@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.company{
+.companyList {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: #37005F;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 500;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.companyLogos{
+.companyTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.companyList p{
+  font-size: 16px;
+  font-weight: 600;
+  color: #37005F;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* * * * * * * * * * * * */
+
+.companyShowcase{
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  width: 100%;
+  flex-wrap: wrap;
+  column-gap: 1rem;
 }

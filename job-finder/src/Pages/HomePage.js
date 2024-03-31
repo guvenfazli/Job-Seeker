@@ -15,11 +15,19 @@ import { useLoaderData } from "react-router-dom"
 
 
 
-export default function HomePage(){
+export default function HomePage() {
 
   const data = useLoaderData();
 
+  /*
 
+      <JobSearch />
+      <Popular />
+      <AvlJobs data={data} />
+      <Join />
+      <Footer />
+       
+  */
 
 
 
@@ -32,11 +40,14 @@ export default function HomePage(){
       <About />
       <AboutSummary />
       <JobSearch />
-      <Popular />
-      <AvlJobs data={data} />
-      <Join />
-      <Footer />
-    
+
+
+
+
+
+
+
+
     </>
   )
 }

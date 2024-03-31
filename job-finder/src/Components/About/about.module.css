@@ -1,31 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.aboutInfo{
+.about{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 1rem;
+}
+
+.about div{
+  display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "Noto Sans", sans-serif;
-  padding: 3rem 10rem;
 }
 
-.aboutInfo h2{
-  color: #37005F;
+.title{
+  font-family: 'Noto Sans', sans-serif;
   font-size: 50px;
+  font-weight: bold;
+  color: #37005F;
 }
 
-.aboutInfo p{
+.link{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  color: #6E00BE;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.desc{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
   color: #706D6E;
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 3rem;
+  text-shadow: 2px 4px 2px rgb(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+@media (max-width:645px) {
+  .title{
+    font-size: 44px;
+  }
+  
+  .link{
+    font-size: 24px;
+  }
+  
+  .desc{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .title{
+    font-size: 38px;
+  }
+  
+  .link{
+    font-size: 20px;
+  }
+  
+  .desc{
+    font-size: 18px;
+  }
 }
 

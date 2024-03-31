@@ -3,15 +3,16 @@ import classes from "./about.module.css"
 export default function About(){
   return (
     <section className={classes.about}>
-      <div className={classes.aboutInfo}>
-          <h2>
-            More Easier to find a job <br />
-            with our platform
-          </h2>
+      <div>
+        <p className={classes.title}>More Easier to find a job <br />with our platform</p>
+      </div>
 
-          <p style={{color: "#6E00BE", textDecoration: "underline", fontSize: "24px", fontWeight: "500"}}>Neuralink-like Personalization</p>
+      <div>
+        <p className={classes.link}>Neuralink-like Personalization</p>
+      </div>
 
-          <p>Imagine having a Neuralink-like connection to our platform, where it understands your unique talents and  aspirations. We provide personalized job recommendations that align perfectly with your skills and  ambitions, empowering you to reach for the stars in your career.</p>
+      <div>
+        <p className={classes.desc}>Imagine having a Neuralink-like connection to our platform, where it understands your unique talents and <br /> aspirations. We provide personalized job recommendations that align perfectly with your skills and <br /> ambitions, empowering you to reach for the stars in your career.</p>
       </div>
     </section>
   )
