@@ -1,19 +1,11 @@
+import { Link } from "react-router-dom"
+import { calculateDate } from "../../../Utils/fetchData"
 import classes from "./jobcard.module.css"
 import calendar from "../../../Assets/JobCardAssets/Calendar.png"
-import dayjs from "dayjs"
 
 export default function JobCard({ job }) {
 
-  const dayjs = require('dayjs')
-  const today = dayjs()
-  const formattedToday = dayjs(today.format('MM/DD/YYYY'))
-  const postedTimeStamp = job.job_posted_at_datetime_utc
-  const postedDate = new Date(postedTimeStamp)
-  const formattedDate = dayjs(postedDate.toLocaleDateString('en-US', { year: "numeric", month: "numeric", day: "numeric" }))
-  const postedDaysAgo = formattedToday.diff(formattedDate, 'day')
-
-
-
+  const postedDaysAgo = calculateDate(job.job_posted_at_datetime_utc)
 
   return (
     <div className={classes.card}>
@@ -42,7 +34,7 @@ export default function JobCard({ job }) {
           <p>{postedDaysAgo} Days Ago</p>
         </div>
 
-        <button className={classes.applyNow}>Apply Now</button>
+        <Link target="_blank" to={`${job.job_apply_link}`}><button className={classes.applyNow}>Apply Now</button></Link>
       </div>
 
 

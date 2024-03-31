@@ -6,12 +6,11 @@ import HomePage from "./Pages/HomePage";
 
 /* L O A D E R S */
 
-import { loader } from "./Components/JobSearch/JobSearch";
 
 function App() {
 
   const router = createBrowserRouter([
-    { path: '/', element: <HomePage />, loader: loader }
+    { path: '/', element: <HomePage /> }
   ])
 
 

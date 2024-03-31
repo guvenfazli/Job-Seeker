@@ -1,11 +1,31 @@
 import classes from "./avljobs.module.css"
 import JobCard from "./JobCard/JobCard"
+import { useState, useEffect } from "react"
+import fetchJobs from "../../Utils/fetchData"
 
+export default function AvlJobs() {
 
+  const [pageNum, setPageNum] = useState(1)
+  const [data, setData] = useState([])
 
-export default function AvlJobs({data}) {
+  function navigatePage(nav) {
+    if (nav === "+") {
+      setPageNum(prev => prev += 1)
+    } else if(nav === "-") {
+      setPageNum(prev => prev -= 1)
+    }
+  }
+
+  useEffect(() => {
+    async function getData() {
+      const jobData = await fetchJobs(pageNum)
+      setData(jobData.data)
+    }
+    getData()
+  }, [pageNum])
 
   console.log(data)
+
 
 
 
@@ -23,13 +43,14 @@ export default function AvlJobs({data}) {
       </div>
 
       <div className={classes.avlList}>
-        {data.data.map((job) => <JobCard key={job.job_id} job={job} />)}
+        {data.map((job) => <JobCard key={job.job_id} job={job} />)}
 
 
       </div>
 
       <div className={classes.allJobsButton}>
-        <button>Show All Jobs Arrow &rarr;</button>
+        <button onClick={() => navigatePage("-")}>&larr; Previous</button>
+        <button onClick={() => navigatePage("+")}>Next &rarr;</button>
 
       </div>
     </section>

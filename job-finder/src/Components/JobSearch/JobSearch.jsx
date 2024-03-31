@@ -1,6 +1,5 @@
 import classes from "./jobsearch.module.css"
 import search from "../../Assets/JobSearchAssets/SearchIcon.png"
-import fetchJobs from "../../Utils/fetchData"
 
 
 export default function JobSearch(){
@@ -21,8 +20,3 @@ export default function JobSearch(){
     </section>
   )
 }
-
-export async function loader(){
-  const data = await fetchJobs()
-  return data
-} 

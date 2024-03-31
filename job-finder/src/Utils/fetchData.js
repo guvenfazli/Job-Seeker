@@ -1,4 +1,4 @@
-export default async function fetchJobs() {
+export default async function fetchJobs(pageNum) {
   const options = {
     method: 'GET',
     headers: {
@@ -6,7 +6,18 @@ export default async function fetchJobs() {
       'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
     }
   };
-  const response = await fetch("https://jsearch.p.rapidapi.com/search?query=a&page=1&num_pages=1", options)
+  const response = await fetch(`https://jsearch.p.rapidapi.com/search?query=a&page=${pageNum}`, options)
   const resData = await response.json();
   return resData;
+}
+
+export function calculateDate(timeStamp){
+  const dayjs = require('dayjs')
+  const today = dayjs()
+  const formattedToday = dayjs(today.format('MM/DD/YYYY'))
+  const postedTimeStamp = timeStamp
+  const postedDate = new Date(postedTimeStamp)
+  const formattedDate = dayjs(postedDate.toLocaleDateString('en-US', { year: "numeric", month: "numeric", day: "numeric" }))
+  const postedDaysAgo = formattedToday.diff(formattedDate, 'day')
+  return postedDaysAgo;
 }
