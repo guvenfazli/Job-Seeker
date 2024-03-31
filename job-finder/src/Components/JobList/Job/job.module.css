@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.job{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  padding: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+
+}
+
+.jobLeft{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid blue;
+}
+
+
+
+.jobLeft div{
+  margin-right: 1rem;
+  border: 1px solid pink;
+  
+}
+
+.jobDetails{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+
+}
+
+.jobRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.jobRight div button {
+  margin-left: 1rem;
+  background-color: #6E00BE;
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}

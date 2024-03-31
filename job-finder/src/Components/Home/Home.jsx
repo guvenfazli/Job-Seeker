@@ -4,8 +4,22 @@ import arrow from "../../Assets/HomeAssets/arrow.png"
 import icon from "../../Assets/HomeAssets/LogoIcon.png"
 import logo from "../../Assets/HomeAssets/Logo.png"
 
+import { useRef, useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Home() {
+
+  const [searchParams, setSearchParams] = useState()
+  const jobTitle = useRef();
+  const country = useRef();
+
+  function setSearchLink() {
+    const jobTitleFormat = jobTitle.current?.value.replaceAll(/ /g, "%20")
+    const countryFormat = country.current?.value.replaceAll(" ", "%20")
+    const formatJob = jobTitleFormat + "%20" + countryFormat
+    setSearchParams(formatJob)
+  }
+
   return (
     <section className={classes.home}>
 
@@ -17,11 +31,11 @@ export default function Home() {
         <div className={classes.homeSearch}>
           <div className={classes.inputCont}>
             <img src={search} alt="search-icon" />
-            <input style={{marginLeft: "1rem"}} type="text" placeholder="Job title or keywords" />
-            <input type="text" placeholder="Country" />
+            <input ref={jobTitle} style={{ marginLeft: "1rem" }} type="text" placeholder="Job title or keywords" onChange={setSearchLink} />
+            <input ref={country} type="text" placeholder="Country" onChange={setSearchLink} />
 
           </div>
-          <button><img src={arrow} alt="arrow-icon" /></button>
+          <button><Link to={`${searchParams}`}>&rarr;</Link></button>
 
         </div>
 

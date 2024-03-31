@@ -1,0 +1,15 @@
+.jobListSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 80%;
+  row-gap: 3rem;
+
+}
