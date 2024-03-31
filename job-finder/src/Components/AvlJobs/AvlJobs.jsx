@@ -1,30 +1,52 @@
 import classes from "./avljobs.module.css"
 import JobCard from "./JobCard/JobCard"
 import { useState, useEffect } from "react"
-import fetchJobs from "../../Utils/fetchData"
+import fetchJobs, { fetchFilteredJobs } from "../../Utils/fetchData"
 
 export default function AvlJobs() {
 
   const [pageNum, setPageNum] = useState(1)
   const [data, setData] = useState([])
+  const [filteredData, setFilteredData] = useState([])
 
   function navigatePage(nav) {
     if (nav === "+") {
       setPageNum(prev => prev += 1)
-    } else if(nav === "-") {
+    } else if (nav === "-") {
       setPageNum(prev => prev -= 1)
     }
   }
 
   useEffect(() => {
-    async function getData() {
-      const jobData = await fetchJobs(pageNum)
-      setData(jobData.data)
+
+    if (filteredData.length <= 0) {
+      async function getData() {
+        const jobData = await fetchJobs(pageNum)
+        setData(jobData.data)
+      }
+
+      getData()
+    } else {
+      async function getFilteredData() {
+        const filteredJobData = await fetchFilteredJobs(pageNum)
+        const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
+        setFilteredData(filteredByPostTime)
+      }
+
+      getFilteredData()
+
     }
-    getData()
+
+
   }, [pageNum])
 
-  console.log(data)
+  function filterJobsByTime() {
+    const filteredByPostTime = data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
+    setFilteredData(filteredByPostTime)
+  }
+
+
+
 
 
 
@@ -36,14 +58,15 @@ export default function AvlJobs() {
         <div>
           <p>Find the following job that suits you and apply!</p>
           <nav>
-            <button>Recent</button>
+            <button onClick={() => filterJobsByTime()}>Recent</button>
             <button>Popular</button>
           </nav>
         </div>
       </div>
 
       <div className={classes.avlList}>
-        {data.map((job) => <JobCard key={job.job_id} job={job} />)}
+        {filteredData.length <= 0 ? data.map((job) => <JobCard key={job.job_id} job={job} />) : filteredData.map((job) => <JobCard key={job.job_id} job={job} />)}
+
 
 
       </div>
