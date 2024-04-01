@@ -12,7 +12,6 @@
   border-radius: 2rem;
   justify-content: space-between;
   cursor: pointer;
-
 }
 
 .tag p{
@@ -36,6 +35,65 @@
   background-color: #37005F;
   font-family: "Noto Sans", sans-serif;
   color: white;
+}
 
+@media (max-width: 490px) {
+  .tag {
+    padding: 0.2rem 0.2rem;
+    border-radius: 2rem;
+  }
+  
+  .tag p{
+    margin: 0;
+    margin-right: 1rem;
+    font-size: 13px;
+    color: black;
+  }
+  
+  .tag span{
+    padding: 0.2rem;
+    border-radius: 1rem;
+    font-size: 10px;
+    width: 2.5rem;
+  }
+  
+  .job{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37005F;
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+  }
+}
+
+@media (max-width: 380px) {
+  .tag {
+    padding: 0.2rem 0.2rem;
+    border-radius: 2rem;
+  }
+  
+  .tag p{
+    margin: 0;
+    margin-right: 0.4rem;
+    font-size: 13px;
+    color: black;
+  }
+  
+  .tag span{
+    padding: 0.2rem;
+    border-radius: 1rem;
+    font-size: 10px;
+    width: 1.5rem;
+  }
+  
+  .job{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37005F;
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+  }
 }
 

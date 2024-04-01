@@ -39,6 +39,7 @@ export default function HomePage() {
       <AboutSummary />
       <JobSearch />
       <Popular />
+      <AvlJobs />
 
 
 

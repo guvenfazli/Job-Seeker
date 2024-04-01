@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import fetchJobs, { fetchFilteredJobs } from "../../Utils/fetchData"
 
 export default function AvlJobs() {
-
+  /*
   const [pageNum, setPageNum] = useState(1)
   const [data, setData] = useState([])
   const [filteredData, setFilteredData] = useState([])
@@ -44,9 +44,7 @@ export default function AvlJobs() {
     const filteredByPostTime = data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
     setFilteredData(filteredByPostTime)
   }
-
-  return (
-    <section className={classes.avlJobs}>
+      <section className={classes.avlJobs}>
       <div className={classes.avlTitle}>
         <h4>Choose Our Available Jobs</h4>
         <div>
@@ -69,6 +67,24 @@ export default function AvlJobs() {
         <button onClick={() => navigatePage("-")}>&larr; Previous</button>
         <button onClick={() => navigatePage("+")}>Next &rarr;</button>
 
+      </div>
+    </section>
+  */
+  return (
+    <section className={classes.avlJobs}>
+      <div className={classes.title}>
+        <p>Choose Our Available Jobs</p>
+      </div>
+
+      <div className={classes.filter}>
+        <div>
+          <p>Find the following job that suits you and apply now!</p>
+        </div>
+
+        <div>
+          <button>Recent</button>
+          <button>Popular</button>
+        </div>
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/*
 .avlJobs{
   display: flex;
   flex-direction: column;
@@ -73,4 +73,131 @@ nav button{
   padding: 1rem;
   font-family: "Noto Sans", sans-serif;
   cursor: pointer;
+}
+*/
+
+.avlJobs {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.title p {
+  color: #37005F;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.filter div p {
+  font-weight: 600;
+  font-size: 16px;
+  color: gray;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.filter div button{
+  padding: 0.8rem 2.5rem;
+  background-color: #6E00BE;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 0rem 1rem;
+}
+
+@media (max-width: 830px) {
+  .title p {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 775px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .title p {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 690px) {
+  .title p {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 610px) {
+  .title p {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 535px) {
+  .title p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 445px) {
+  .title p {
+    font-size: 30px;
+  }
+
+  .filter div p {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .filter div button{
+    padding: 0.4rem 1.5rem;
+    background-color: #6E00BE;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0rem 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    justify-content: center;
+  }
+  
+  .title p {
+    font-size: 26px;
+  }
+
+
 }

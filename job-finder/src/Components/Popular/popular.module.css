@@ -48,12 +48,22 @@
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
 
   .tagList {
     width: 100%;
   }
 
+  .tagList {
+    gap: 1rem 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .tagList {
+    width: 100%;
+  }
 
   .tagList {
     gap: 1rem 1rem;
@@ -63,5 +73,11 @@
 @media (max-width: 800px) {
   .tagList {
     gap: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .tagList {
+    gap: 1rem 0.1rem;
   }
 }
