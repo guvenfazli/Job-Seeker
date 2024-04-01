@@ -9,7 +9,7 @@
 .homeLeft{
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 5rem 1rem;
   background-color: #37005F;
   background-image: url(../../Assets/HomeAssets/HomeBG.png);
   background-size: 100%;
@@ -28,6 +28,7 @@
   font-family: "Lora", sans-serif;
   font-size: 50px;
   font-weight: bold;
+  margin-top: 0px;
 }
 
 @media (max-width: 560px) {
@@ -100,9 +101,19 @@
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   cursor: pointer;
+  
   width: 15%;
   font-size: 1.2rem;
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+@media (max-width: 790px) {
+
+
+  .searchSection a{
+    font-size: 14px;
+  }
   
 }
 
@@ -164,6 +175,7 @@
     border: none;
     border-top-right-radius: 0rem;
     border-bottom-right-radius: 0rem;
+    height: 2rem;
   }
   
 }
@@ -180,27 +192,31 @@
 
 .logoConteiner{
   display: flex;
+  width: 65%;
+  height: 50%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #6E00BE;
-  padding: 3rem;
   border-radius: 3rem;
+  padding: 0rem 1rem;
 }
 
-.logoConteiner img{
-  display: flex;
+.logoConteiner div{
   width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .logoConteiner{
-    padding: 1rem;
-    border-radius: 1rem;
+    width: 80%;
+    height: 50%;
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 765px) {
   .homeRight {
     display: none;
   }

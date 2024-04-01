@@ -4,12 +4,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0rem 1rem;
 }
 
 .headerLeft {
   display: flex;
   flex-direction: row;
-  padding-left: 1rem;
 }
 
 .headerLogo {
@@ -31,7 +31,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 1rem;
 }
 
 .headerMiddle button {
@@ -55,6 +54,7 @@ header {
   border-radius: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+  white-space: nowrap;
 
 }
 
@@ -82,28 +82,45 @@ header {
 
 }
 
+@media (max-width: 605px) {
+  .headerMiddle button {
+    margin: 0rem;
+  }
+}
+
 @media (max-width: 480px) {
   .headerLogo {
     padding: 0.5rem
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 440px) {
   .headerRight{
     display: none;
   }
-}
 
-@media (max-width: 360px){
   .headerMiddle button {
     margin: 0rem;
   }
-
-
 }
 
 @media (max-width: 330px){
   .headerLogo {
     padding: 0rem
+  }
+}
+
+
+@media (max-width: 310px){
+  .headerMiddle{
+    display: none;
+  }
+
+  .headerLeft{
+    padding-left: 0rem;
+  }
+
+  header {
+    justify-content: center;
   }
 }

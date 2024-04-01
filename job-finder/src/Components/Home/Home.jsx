@@ -40,8 +40,12 @@ export default function Home() {
 
       <div className={classes.homeRight}>
         <div className={classes.logoConteiner}>
-          <img src={icon} alt="company-icon" />
-          <img src={logo} alt="company-logo" />
+          
+          <div style={{backgroundImage: `url(${icon})`}} />
+
+
+          <div style={{backgroundImage: `url(${logo})`}} />
+
         </div>
       </div>
 

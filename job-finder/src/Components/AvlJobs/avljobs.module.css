@@ -79,7 +79,7 @@ nav button{
 .avlJobs {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 5rem 1rem;
   background-color: rgb(226, 204, 242, 0.3);
 
 }
@@ -96,6 +96,7 @@ nav button{
   font-size: 60px;
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .filter {
