@@ -22,7 +22,6 @@ export default function HomePage() {
   /*
 
       <AvlJobs data={data} />
-      <Join />
       <Footer />
        
   */
@@ -40,6 +39,8 @@ export default function HomePage() {
       <JobSearch />
       <Popular />
       <AvlJobs />
+      <Join />
+
 
 
 

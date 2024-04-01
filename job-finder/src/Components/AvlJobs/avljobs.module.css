@@ -80,6 +80,8 @@ nav button{
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  background-color: rgb(226, 204, 242, 0.3);
+
 }
 
 .title {
@@ -93,12 +95,14 @@ nav button{
   font-weight: bold;
   font-size: 60px;
   font-family: "Noto Sans", sans-serif;
+  margin-bottom: 0px;
 }
 
 .filter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .filter div{
@@ -117,7 +121,7 @@ nav button{
 }
 
 .filter div button{
-  padding: 0.8rem 2.5rem;
+  padding: 0.7rem 2.5rem;
   background-color: #6E00BE;
   color: white;
   font-size: 16px;
@@ -125,6 +129,8 @@ nav button{
   border-radius: 2rem;
   cursor: pointer;
   margin: 0rem 1rem;
+  font-family: "Noto Sans", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (max-width: 830px) {
@@ -199,5 +205,15 @@ nav button{
     font-size: 26px;
   }
 
-
 }
+
+/* * * * * * * * * * * */
+
+.jobShowcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem 0.5rem;
+}
+

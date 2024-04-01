@@ -1,70 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.join {
+.joinSection{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 5rem 0rem;
+  padding: 1rem;
+  padding-right: 0;
 }
 
-.purpleCard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4rem 6rem;
-  padding-right: 2rem;
-  background-color: #6E00BE;
-  font-family: "Noto Sans", sans-serif;
-  border-top-left-radius: 7rem;
-  border-bottom-left-radius: 7rem;
-
-}
-
-.foundIt{
-  display: flex;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  padding: 9rem;
-  border-radius: 5rem;
-  margin-right: 4rem;
-}
-
-.joinInfo{
+.join{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
+  background-color: #6E00BE;
+  padding: 5rem;
+  padding-right: 1rem;
+  padding-left: 2rem;
+  width: 80%;
+  border-top-left-radius: 8rem;
+  border-bottom-left-radius: 8rem;
 }
 
-.joinInfo h4{
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 0px;
-  font-weight: 400;
-  color: white;
-}
-
-.joinInfo p{
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 6rem;
-  color: white;
-}
-
-.joinInfo div{
+.fakeDiv{
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.joinInfo div button{
-  padding: 0.5rem 1rem;
-  border: 1px solid #FFA000;
-  background: none;
-  font-size: 16px;
-  color: #FFA000;
-  font-family: "Noto Sans", sans-serif;
-  margin-right: 4rem;
-  border-radius: 2rem;
-  cursor: pointer;
+.joinLogo{
+  display: flex;
+  align-items: stretch;
+  background-color: white;
+  border-radius: 5rem;
+  background-image: url(../../Assets/JoinAssets/JoinLogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40%;
+}
+
+.joinText{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  margin-left: 1rem;
+}
+
+.title{
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.desc{
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+
+.joinNav{
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+
+}
+
+.joinNav button{
+  padding: 0.7rem 2rem;
+  margin-right: 1.5rem;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFA000;
+  background: none;
+  border: 2px solid #FFA000;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .title{
+    font-size: 46px;
+  }
+  
+  .desc{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 890px) {
+
+  .join{
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+
+  .fakeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .joinLogo{
+    display: none;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .title{
+    font-size: 42px;
+  }
+  
+  .desc{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 535px) {
+
+  .joinSection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .join{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #6E00BE;
+    padding: 5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  }
+
+  .title{
+    font-size: 38px;
+  }
+  
+  .desc{
+    font-size: 14px;
+  }
+
+  .joinLogo{
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+    border-radius: 2rem;
+    background-image: url(../../Assets/JoinAssets/JoinLogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media (max-width: 405px) {
+
+  .joinNav button{
+    padding: 0.3rem 1rem;
+    margin-right: 1.5rem;
+    font-size: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  .title{
+    font-size: 34px;
+    
+  }
+  
+  .desc{
+    font-size: 14px;
+  }
+
 
 }

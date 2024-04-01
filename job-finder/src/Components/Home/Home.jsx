@@ -34,7 +34,7 @@ export default function Home() {
         <div className={classes.searchSection}>
           <input className={classes.inputStarter} placeholder="Job title or keyword" type="text" />
           <input placeholder="Country or City" type="text" />
-          <button>Search</button>
+          <Link>Search</Link>
         </div>
       </div>
 

@@ -86,6 +86,16 @@ export default function AvlJobs() {
           <button>Popular</button>
         </div>
       </div>
+
+      <div className={classes.jobShowcase}>
+        <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
+        <JobCard />
+      </div>
     </section>
   )
 }

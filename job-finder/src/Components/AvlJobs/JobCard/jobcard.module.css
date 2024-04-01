@@ -2,115 +2,164 @@
 
 
 .card {
-  width: 25%;
-  max-width: 400px;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  justify-content: flex-start;
-  background-color: white;
-  font-family: "Noto Sans", sans-serif;
-  border-radius: 2rem;
+  padding: 1.5rem 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  background-color: white;
+  border-radius: 1rem;
 }
 
-.companyInfo{
+.companyInfo {
   display: flex;
   flex-direction: row;
-  padding: 2.5rem 0.5rem;
   align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid gray;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-.primaryInfo{
+.companyInfo p{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+  color: black;
+  
+}
+
+.companyLeft {
   display: flex;
   flex-direction: row;
+  width: 100%;
+
 }
 
 .companyImg{
   display: flex;
+  height: auto;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
-  width: 50px;
-  height: 50px;
-  background-position: center;
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-color: rgb(226, 204, 242, 0.5);
-  border-radius: 5rem;
-  padding: 0.5rem;
 }
 
-.companyTitle {
+.companyImg div{
+  background-color: rgb(226, 204, 242, 0.5);
+  border-radius: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  background-image: url("../../../Assets/JobListAssets/None.png");
+  margin-right: 0.5rem;
+}
+
+
+.company{
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
-}
-
-.companyTitle p{
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
-  color: black;
 }
 
 .companyInfo button{
-  padding: 0.4rem 1.6rem;
+  padding: 0.3rem 1rem;
   background: none;
-  border: 2px solid #6E00BE;
+  font-family: 'Noto Sans', sans-serif;
+  border: 1px solid #6E00BE;
   color: #6E00BE;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
   border-radius: 1rem;
   cursor: pointer;
-  font-weight: 600;
-  font-family: "Noto Sans", sans-serif;
-  
 }
+
+@media (max-width: 815px) {
+  .companyInfo button{
+    padding: 0.3rem 0.3rem;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+
+}
+
+@media (max-width: 740px) {
+  .companyInfo button{
+    padding: 0.5rem 0.5rem;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .card {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 660px) {
+  .card {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* * * * * * * * * * * * * */
 
 .jobInfo{
   display: flex;
   flex-direction: column;
-  padding: 1.2rem 0rem;
 }
 
-.jobInfo p{
-  font-size: 24px;
-  margin: 10px 0px;
-  color: #37005F;
-  font-weight: 600;
-  font-family: "Noto Sans", sans-serif;
-}
-
-.applyJob{
+.job{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0.5rem;
+}
+
+.job p{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  color: #37005F;
+
+}
+
+.jobNav{
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0.5rem;
 }
 
-.jobTime{
+.jobNav svg{
+  margin-right: 0.3rem;
+}
+
+.jobNav p{
+  font-family: 'Noto Sans', sans-serif;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.jobNav div{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  font-size: 14px;
-
 }
 
-.jobTime img{
-  margin-right: 0.6rem;
-}
-
-.applyNow{
-  padding: 0.5rem 1.6rem;
-  background: none;
+.jobNav button{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
   color: white;
-  background-color: #6E00BE;
-  border-radius: 1rem;
+  font-weight: 500;
   border: none;
+  background-color: #6E00BE;
+  padding: 0.5rem 1.3rem;
+  border-radius: 5rem;
   cursor: pointer;
- 
-  font-family: "Noto Sans", sans-serif;
 }
+

@@ -1,26 +1,25 @@
 import classes from "./join.module.css"
-import logo from "../../Assets/JoinAssets/JoinLogo.png"
 
 
 export default function Join() {
   return (
-    <section className={classes.join}>
-      <div className={classes.purpleCard}>
-        <div className={classes.foundIt}>
-          <img src={logo} alt="found-it-logo" />
-        </div>
+    <section className={classes.joinSection}>
+      <div className={classes.join}>
+        <div className={classes.fakeDiv}>
+          <div className={classes.joinLogo} />
+         
 
-        <div className={classes.joinInfo}>
-          <h4>Let's start joining us and <br /> get a job</h4>
-          <p>Let's join our platform at jobs me for an experience in finding a job that is easier <br /> and matches what you are looking for.</p>
-          <div>
-            <button>Join Now</button>
-            <button>Learn more &rarr;</button>
+          <div className={classes.joinText}>
+            <p className={classes.title}>Let's start joining us and <br /> get a job</p>
+            <p className={classes.desc}>Let's join our platform at jobs me for an experience in finding a job that is <br /> easier and matches what you are looking for</p>
+            <div className={classes.joinNav}>
+              <button>Join Now</button>
+              <button style={{ border: "none", boxShadow: "none" }}>Learn More 	&rarr;</button>
+            </div>
           </div>
+
         </div>
       </div>
-
-
     </section>
   )
 }
