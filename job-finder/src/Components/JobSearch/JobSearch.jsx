@@ -3,6 +3,8 @@ import search from "../../Assets/JobSearchAssets/SearchIcon.png"
 
 
 export default function JobSearch() {
+  
+  
   return (
 
     <section className={classes.jobSearch}>
@@ -16,12 +18,11 @@ export default function JobSearch() {
 
       <div className={classes.searchSec}>
         <div className={classes.inputCont}>
-          <input type="text" style={{borderRight: "1px solid gray", borderTopLeftRadius: "0.5rem", borderBottomLeftRadius: "0.5rem"}} placeholder="Category"/>
-          <input type="text" placeholder="Category"/>
+          <input type="text" style={{ borderRight: "1px solid gray", borderTopLeftRadius: "0.5rem", borderBottomLeftRadius: "0.5rem" }} placeholder="Category" />
+          <input type="text" placeholder="Category" />
           <button>Search</button>
         </div>
       </div>
-
     </section>
 
   )

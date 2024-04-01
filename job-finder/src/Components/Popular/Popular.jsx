@@ -2,15 +2,22 @@ import classes from "./popular.module.css"
 import Tags from "./Tags/Tags"
 import { populerList } from "../../Datas/data"
 
+console.log(populerList)
+
 export default function Popular() {
   return (
     <section className={classes.popular}>
-      <p className={classes.title}>Popular Category</p>
-      <div className={classes.tagList}>
-        {populerList.map((row) => <Tags key={row.title} jobs={row.jobs} tags={row.title} />)}
+     <div className={classes.title}>
+        <p>Popular Category</p>
+     </div>  
+     
+     <div className={classes.tagList}>
+        {populerList.map((tag) => <Tags key={tag.title} tags={tag.title} jobs={tag.jobs} />)}
+     </div>
 
-      </div>
-      <button style={{fontSize: "20px", border: "none", cursor: "pointer"}}>More Categories &rarr;</button>
+     <div className={classes.navMore}>
+        <button>More Categories &rarr;</button>
+     </div>
     </section>
   )
 }
