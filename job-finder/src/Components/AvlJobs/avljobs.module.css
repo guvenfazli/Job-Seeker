@@ -215,6 +215,27 @@ nav button{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 3rem;
   gap: 3rem 0.5rem;
 }
+
+.avlJobNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.avlJobNav button{
+  font-size: 18px;
+  color: black;
+  background: none;
+  border: none;
+  padding: 0.2rem 1rem;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+  border: 1px solid #6E00BE;
+  border-radius: 3rem;
+}
+
+
 

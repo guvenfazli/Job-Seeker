@@ -12,7 +12,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/', children: [
-        { index: true, element: <HomePage /> },
+        { index: true, element: <HomePage />,  },
         { path: ':jobName', element: <JobListPage />, loader: loader }
       ]
     }

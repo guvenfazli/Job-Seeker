@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 0rem 1rem; 
+  padding: 5rem 1rem; 
   background-color: #6E00BE;
 
 }
@@ -23,6 +23,8 @@
   text-shadow: 2px 4px 2px rgb(0, 0, 0, 0.2);
   font-family: 'Noto Sans', sans-serif;
   color: white;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .desc{

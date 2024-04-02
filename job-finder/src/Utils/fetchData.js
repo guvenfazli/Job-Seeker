@@ -1,3 +1,4 @@
+
 export default async function fetchJobs(pageNum) {
   const options = {
     method: 'GET',
@@ -10,6 +11,7 @@ export default async function fetchJobs(pageNum) {
   const resData = await response.json();
   return resData;
 }
+
 
 export async function fetchJobsByParams(params) {
   const options = {

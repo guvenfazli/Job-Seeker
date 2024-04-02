@@ -10,8 +10,6 @@ import AvlJobs from "../Components/AvlJobs/AvlJobs"
 import Join from "../Components/Join/Join"
 import Footer from "../Components/Footer/Footer"
 
-import { useLoaderData } from "react-router-dom"
-
 
 
 
@@ -33,3 +31,4 @@ export default function HomePage() {
     </>
   )
 }
+

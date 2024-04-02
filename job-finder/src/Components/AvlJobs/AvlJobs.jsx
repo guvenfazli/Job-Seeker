@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import fetchJobs, { fetchFilteredJobs } from "../../Utils/fetchData"
 
 export default function AvlJobs() {
-  /*
+
   const [pageNum, setPageNum] = useState(1)
   const [data, setData] = useState([])
   const [filteredData, setFilteredData] = useState([])
@@ -17,59 +17,43 @@ export default function AvlJobs() {
     }
   }
 
-  useEffect(() => {
-
-    if (filteredData.length <= 0) {
-      async function getData() {
-        const jobData = await fetchJobs(pageNum)
-        setData(jobData.data)
-      }
-
-      getData()
-    } else {
-      async function getFilteredData() {
-        const filteredJobData = await fetchFilteredJobs(pageNum)
-        const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
-        setFilteredData(filteredByPostTime)
-      }
-
-      getFilteredData()
-
-    }
-
-
-  }, [pageNum])
-
   function filterJobsByTime() {
     const filteredByPostTime = data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
     setFilteredData(filteredByPostTime)
   }
-      <section className={classes.avlJobs}>
-      <div className={classes.avlTitle}>
-        <h4>Choose Our Available Jobs</h4>
-        <div>
-          <p>Find the following job that suits you and apply!</p>
-          <nav>
-            <button onClick={() => filterJobsByTime()}>Recent</button>
-            <button>Popular</button>
-          </nav>
-        </div>
-      </div>
+  
+  /*
+ useEffect(() => {
 
-      <div className={classes.avlList}>
-        {filteredData.length <= 0 ? data.map((job) => <JobCard key={job.job_id} job={job} />) : filteredData.map((job) => <JobCard key={job.job_id} job={job} />)}
+   if (filteredData.length <= 0) {
+     async function getData() {
+       const jobData = await fetchJobs(pageNum)
+       setData(jobData.data)
+     }
+
+     getData()
+
+   } else if (filteredData.length >= 0) {
+     async function getFilteredData() {
+       const filteredJobData = await fetchFilteredJobs(pageNum)
+       const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
+       setFilteredData(filteredByPostTime)
+     }
+
+     getFilteredData()
+
+   }
 
 
+ }, [pageNum])
+ */
 
-      </div>
 
-      <div className={classes.allJobsButton}>
-        <button onClick={() => navigatePage("-")}>&larr; Previous</button>
-        <button onClick={() => navigatePage("+")}>Next &rarr;</button>
+ // {data.map((job) => <JobCard key={job.job_id} job={job} />)}
+ 
 
-      </div>
-    </section>
-  */
+  console.log(data)
+
   return (
     <section className={classes.avlJobs}>
       <div className={classes.title}>
@@ -82,19 +66,18 @@ export default function AvlJobs() {
         </div>
 
         <div>
-          <button>Recent</button>
+          <button onClick={() => filterJobsByTime()}>Recent</button>
           <button>Popular</button>
         </div>
       </div>
 
       <div className={classes.jobShowcase}>
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
-        <JobCard />
+      
+      </div>
+
+      <div className={classes.avlJobNav}>
+        <button onClick={() => navigatePage("-")}>&larr; Previous</button>
+        <button onClick={() => navigatePage("+")}>Next &rarr;</button>
       </div>
     </section>
   )

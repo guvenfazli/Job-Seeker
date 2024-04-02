@@ -67,7 +67,7 @@
   outline: none;
   border: none;
   border-right: 1px solid gray;
-
+  background-color: #D9D9D9;
 }
 
 .inputStarter{
@@ -101,12 +101,12 @@
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   cursor: pointer;
-  
   width: 15%;
   font-size: 1.2rem;
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
 }
+
+
 
 @media (max-width: 790px) {
 
@@ -209,6 +209,14 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1024px) {
+  .logoConteiner{
+    width: 80%;
+    height: 50%;
+  }
+}
+
+
 @media (max-width: 970px) {
   .logoConteiner{
     width: 80%;
@@ -216,7 +224,8 @@
   }
 }
 
-@media (max-width: 765px) {
+
+@media (max-width: 835px) {
   .homeRight {
     display: none;
   }

@@ -2,8 +2,6 @@ import classes from "./popular.module.css"
 import Tags from "./Tags/Tags"
 import { populerList } from "../../Datas/data"
 
-console.log(populerList)
-
 export default function Popular() {
   return (
     <section className={classes.popular}>
