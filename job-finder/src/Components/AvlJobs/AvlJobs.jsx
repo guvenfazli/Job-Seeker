@@ -2,12 +2,15 @@ import classes from "./avljobs.module.css"
 import JobCard from "./JobCard/JobCard"
 import { useState, useEffect } from "react"
 import fetchJobs, { fetchFilteredJobs } from "../../Utils/fetchData"
+import Loading from "../UI/Loading"
+
 
 export default function AvlJobs() {
 
   const [pageNum, setPageNum] = useState(1)
   const [data, setData] = useState([])
   const [filteredData, setFilteredData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
   function navigatePage(nav) {
     if (nav === "+") {
@@ -21,36 +24,46 @@ export default function AvlJobs() {
     const filteredByPostTime = data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
     setFilteredData(filteredByPostTime)
   }
-  
+
   /*
- useEffect(() => {
+    useEffect(() => {
+  
+      if (filteredData.length <= 0) {
+        async function getData() {
+          setIsLoading(true)
+          const jobData = await fetchJobs(pageNum)
+          setIsLoading(false)
+          setData(jobData.data)
+        }
+  
+        getData()
+  
+      } else if (filteredData.length >= 0) {
+        async function getFilteredData() {
+          setIsLoading(true)
+          const filteredJobData = await fetchFilteredJobs(pageNum)
+          const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
+          setIsLoading(false)
+          setFilteredData(filteredByPostTime)
+        }
+  
+        getFilteredData()
+  
+      }
+  
+  
+    }, [pageNum])
+  
+     (data.map((job) => <JobCard key={job.job_id} job={job} />) 
+  
+    */
 
-   if (filteredData.length <= 0) {
-     async function getData() {
-       const jobData = await fetchJobs(pageNum)
-       setData(jobData.data)
-     }
-
-     getData()
-
-   } else if (filteredData.length >= 0) {
-     async function getFilteredData() {
-       const filteredJobData = await fetchFilteredJobs(pageNum)
-       const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
-       setFilteredData(filteredByPostTime)
-     }
-
-     getFilteredData()
-
-   }
 
 
- }, [pageNum])
- */
 
 
- // {data.map((job) => <JobCard key={job.job_id} job={job} />)}
- 
+
+
 
   console.log(data)
 
@@ -72,7 +85,7 @@ export default function AvlJobs() {
       </div>
 
       <div className={classes.jobShowcase}>
-      
+        {isLoading && <Loading />}
       </div>
 
       <div className={classes.avlJobNav}>

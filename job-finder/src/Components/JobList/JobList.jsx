@@ -11,8 +11,6 @@ export default function JobList({ data, searchParam }) {
       <div className={classes.jobList}>
         {data.data.map((job) => <Job key={job.job_id} job={job} />)}
       </div>
-
-
     </section>
   )
 }

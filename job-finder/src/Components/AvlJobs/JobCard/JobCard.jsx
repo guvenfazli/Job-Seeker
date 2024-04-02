@@ -6,7 +6,7 @@ import noCompany from "../../../Assets/JobListAssets/None.png"
 
 export default function JobCard({ job }) {
   
- // const postedDaysAgo = calculateDate(job.job_posted_at_datetime_utc)
+  const postedDaysAgo = calculateDate(job.job_posted_at_datetime_utc)
   
   console.log(job)
 
@@ -20,8 +20,8 @@ export default function JobCard({ job }) {
             <div style={{backgroundImage: `url(${job.employer_logo ? job.employer_logo : noCompany })`}}/>
           </div>
           <div className={classes.company}>
-            <p style={{ fontSize: "16px" }}>{job.company}</p>
-            <p style={{ fontSize: "12px" }}>{job.location}</p>
+            <p style={{ fontSize: "16px" }}>{job.employer_name}</p>
+            <p style={{ fontSize: "12px" }}>{job.job_city} {job.job_city && ","} {job.job_country}</p>
           </div>
 
         </div>
@@ -37,7 +37,7 @@ export default function JobCard({ job }) {
         <div className={classes.jobNav}>
           <div>
             {calendar}
-            <p>{job.posted_time}</p>
+            <p>{postedDaysAgo}</p>
           </div>
 
           <button>Apply Now</button>

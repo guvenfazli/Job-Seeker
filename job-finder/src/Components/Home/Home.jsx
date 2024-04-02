@@ -17,6 +17,7 @@ export default function Home() {
     const jobTitleFormat = jobTitle.current?.value.replaceAll(/ /g, "%20")
     const countryFormat = country.current?.value.replaceAll(" ", "%20")
     const formatJob = jobTitleFormat + "%20" + countryFormat
+    console.log(formatJob)
     setSearchParams(formatJob)
   }
 
@@ -33,9 +34,9 @@ export default function Home() {
         </div>
 
         <div className={classes.searchSection}>
-          <input className={classes.inputStarter} placeholder="Job title or keyword" type="text" />
-          <input style={{border: "none"}} placeholder="Country or City" type="text" />
-          <Link>Search</Link>
+          <input ref={jobTitle} className={classes.inputStarter} placeholder="Job title or keyword" type="text" onChange={() => setSearchLink()} />
+          <input ref={country} style={{border: "none"}} placeholder="Country or City" type="text" onChange={() => setSearchLink()}/>
+          <Link to={`${searchParams}`}>Search</Link>
         </div>
       </div>
 
