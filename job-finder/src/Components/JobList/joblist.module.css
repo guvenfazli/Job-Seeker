@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.jobListSection{
+.jobListSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 1rem;
+  border: 1px solid red;
   background-color: rgb(226, 204, 242, 0.5);
 }
 
-.titleContainer{
+.titleContainer {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.title{
+.title {
   font-size: 36px;
   color: black;
   font-family: "Noto Sans", sans-serif;
@@ -23,9 +23,65 @@
 }
 
 .jobList {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  flex-direction: row;
   row-gap: 3rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  align-items: center;
+}
 
+@media (max-width: 720px) {
+  .title {
+    font-size: 26px;
+  }
+
+
+  .jobList {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    flex-direction: row;
+    row-gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .jobList {
+    display: grid;
+    grid-template-columns: 65%;
+    flex-direction: row;
+    row-gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 20px;
+
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 16px;
+
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    font-size: 14px;
+
+  }
 }

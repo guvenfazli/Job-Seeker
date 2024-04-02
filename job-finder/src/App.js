@@ -8,19 +8,19 @@ import Test from "./Pages/Test";
 
 /* L O A D E R S */
 import { loader } from "./Pages/JobListPage";
-import { loadPeople } from "./Pages/Test";
-import { deferPeople } from "./Pages/Test";
+
+//  loader: loader JobListPage
 function App() {
 
   const router = createBrowserRouter([
     {
       path: '/', element: <MainRoot />, children: [
         { index: true, element: <HomePage />, },
-        { path: ':jobName', element: <JobListPage />, loader: loader },
+        { path: ':jobName', element: <JobListPage />,},
 
       ]
     },
-    { path: '/test', element: <Test />, loader: deferPeople }
+    { path: '/test', element: <Test />,}
 
   ])
 

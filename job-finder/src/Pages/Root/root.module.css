@@ -1,0 +1,8 @@
+.loadingCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  gap: 3rem 0.5rem;
+}

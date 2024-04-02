@@ -23,9 +23,7 @@
 }
 
 .statIcon {
-  border: 1px solid red;
-  height: 10%;
-  background-size: contain;
+  height: 10rem;
   background-position: center;
   background-repeat: no-repeat;
 

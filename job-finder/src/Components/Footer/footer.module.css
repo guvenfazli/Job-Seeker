@@ -58,6 +58,7 @@ footer {
   margin-bottom: 1rem;
   font-size: 14px;
   font-weight: 300;
+  cursor: pointer;
 }
 
 @media (max-width: 535px) {

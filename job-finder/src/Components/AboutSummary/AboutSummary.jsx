@@ -10,7 +10,7 @@ export default function AboutSummary() {
   return (
     <section className={classes.summary}>
       <div className={classes.card}>
-        <div className={classes.statIcon} style={{ backgroundImage: `url(${hands})`, backgroundSize: "100% auto" }} />
+        <div className={classes.statIcon} style={{ backgroundImage: `url(${hands})` }} />
         <div className={classes.info}>
           <p className={classes.title}>Easy Applying</p>
           <p className={classes.desc}>The process for applying for job is easy and fast.</p>

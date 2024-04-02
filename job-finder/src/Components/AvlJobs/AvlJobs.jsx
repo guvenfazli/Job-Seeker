@@ -58,15 +58,6 @@ export default function AvlJobs() {
   
     */
 
-
-
-
-
-
-
-
-  console.log(data)
-
   return (
     <section className={classes.avlJobs}>
       <div className={classes.title}>
