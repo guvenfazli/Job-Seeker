@@ -14,21 +14,25 @@
   cursor: pointer;
 }
 
-.tag p{
+.tag p {
   margin: 0;
   margin-right: 1rem;
   font-size: 17px;
   color: black;
 }
 
-.tag span{
+.tag span {
   padding: 0.2rem;
   border-radius: 1rem;
   font-size: 12px;
   width: 2.5rem;
 }
 
-.job{
+a {
+  text-decoration: none;
+}
+
+.job {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,22 +46,22 @@
     padding: 0.2rem 0.2rem;
     border-radius: 2rem;
   }
-  
-  .tag p{
+
+  .tag p {
     margin: 0;
     margin-right: 1rem;
     font-size: 13px;
     color: black;
   }
-  
-  .tag span{
+
+  .tag span {
     padding: 0.2rem;
     border-radius: 1rem;
     font-size: 10px;
     width: 2.5rem;
   }
-  
-  .job{
+
+  .job {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,22 +76,22 @@
     padding: 0.2rem 0.2rem;
     border-radius: 2rem;
   }
-  
-  .tag p{
+
+  .tag p {
     margin: 0;
     margin-right: 0.4rem;
     font-size: 13px;
     color: black;
   }
-  
-  .tag span{
+
+  .tag span {
     padding: 0.2rem;
     border-radius: 1rem;
     font-size: 10px;
     width: 1.5rem;
   }
-  
-  .job{
+
+  .job {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,4 +100,3 @@
     color: white;
   }
 }
-

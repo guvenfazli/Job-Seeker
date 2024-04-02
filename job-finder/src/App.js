@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 
 /* P A G E S */
+import MainRoot from "./Pages/Root/MainRoot";
 import HomePage from "./Pages/HomePage";
 import JobListPage from "./Pages/JobListPage";
 import Test from "./Pages/Test";
@@ -13,7 +14,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/', children: [
+      path: '/', element: <MainRoot />, children: [
         { index: true, element: <HomePage />, },
         { path: ':jobName', element: <JobListPage />, loader: loader },
 
