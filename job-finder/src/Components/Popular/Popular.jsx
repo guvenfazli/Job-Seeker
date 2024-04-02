@@ -10,9 +10,9 @@ export default function Popular() {
       end: 14
    })
 
-   function showMoreTag(){
+   function showMoreTag() {
       setMore((prev) => {
-         let old = {...prev}
+         let old = { ...prev }
          old.end += 3
          return old
       })
@@ -21,19 +21,19 @@ export default function Popular() {
 
    const popularListLimited = populerList.slice(more.start, more.end)
 
-  return (
-    <section className={classes.popular}>
-     <div className={classes.title}>
-        <p>Popular Category</p>
-     </div>  
-     
-     <div className={classes.tagList}>
-        {popularListLimited.map((tag) => <Tags key={tag.title} tags={tag.title} jobs={tag.jobs} />)}
-     </div>
+   return (
+      <section className={classes.popular}>
+         <div className={classes.title}>
+            <p>Popular Category</p>
+         </div>
 
-     <div className={classes.navMore}>
-        <button onClick={() => showMoreTag()}>More Categories &rarr;</button>
-     </div>
-    </section>
-  )
+         <div className={classes.tagList}>
+            {popularListLimited.map((tag) => <Tags key={tag.title} tags={tag.title} jobs={tag.jobs} />)}
+         </div>
+
+         <div className={classes.navMore}>
+            {more.end < populerList.length && <button onClick={() => showMoreTag()}>More Categories &rarr;</button>}
+         </div>
+      </section>
+   )
 }

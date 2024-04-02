@@ -32,6 +32,8 @@ export default function Test() {
   }, [testData])
 
   console.log(testRef.current?.innerHTML)
+  const halfItems = Math.ceil(testData.length / 2)
+  const halfArray = testData.slice(0, halfItems)
 
   return (
     <>
@@ -42,6 +44,8 @@ export default function Test() {
         </Await>
       </Suspense>
       }
+
+      {halfArray.map((row) => <button>Selam</button>)}
 
 
     </>

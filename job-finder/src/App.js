@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { RouterProvider, createBrowserRouter, defer } from "react-router-dom"
 
 /* P A G E S */
 import MainRoot from "./Pages/Root/MainRoot";
@@ -8,7 +8,7 @@ import Test from "./Pages/Test";
 
 /* L O A D E R S */
 import { loader } from "./Pages/JobListPage";
-
+import { deferPeople } from "./Pages/Test";
 //  loader: loader JobListPage
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
 
       ]
     },
-    { path: '/test', element: <Test />,}
+    { path: '/test', element: <Test />, loader: deferPeople}
 
   ])
 
