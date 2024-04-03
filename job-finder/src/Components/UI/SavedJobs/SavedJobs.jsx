@@ -1,55 +1,65 @@
 import classes from "./savedjobs.module.css"
+import SavedJob from "./SavedJob/SavedJob"
+import SaveContext from "../../../Store/context"
+import { useContext, useState } from "react"
+
+
+
 
 export default function SavedJobs({ isOpen, setIsOpen }) {
+
+  const [page, setPage] = useState({
+    start: 0,
+    end: 2
+  })
 
   function showSavedJobs() {
     setIsOpen(prev => !prev)
   }
 
+  const saveCtx = useContext(SaveContext)
+  const filteredJob = saveCtx.savedJobs.slice(page.start, page.end)
+
+  function pageNavigator(navigate){
+    if(navigate === "+"){
+      setPage((prev) => {
+        let updated = {...prev}
+        updated.start += 2
+        updated.end += 2
+        return updated
+      })
+    } else if(navigate === "-"){
+      setPage((prev) => {
+        let updated = {...prev}
+        updated.start -= 2
+        updated.end -= 2
+        return updated
+      })
+    }
+  }
 
   return (
     <>
+      <button onClick={showSavedJobs} className={classes.isSavedButton}>Saved <br />Jobs</button>
 
       <div className={isOpen ? classes.jobsOn : classes.jobsOff}>
-        <button onClick={showSavedJobs} className={classes.isSavedButton}>Saved <br />Jobs</button>
         <div className={classes.savedJobList}>
-          <p className={classes.title}>Your Saved Jobs</p>
-          <div className={classes.savedJob}>
-            <div className={classes.jobInfo}>
-              <p>Job Title</p>
-              <p>Company</p>
-              <p>City</p>
-            </div>
+          <div className={classes.jobListHeader}>
+            <p className={classes.title}>Your Saved Jobs {`(${saveCtx.savedJobs.length})`}</p>
+            <button onClick={showSavedJobs}>X</button>
 
-            <button>Apply!</button>
+
           </div>
 
-          <div className={classes.savedJob}>
-            <div className={classes.jobInfo}>
-              <p>Job Title</p>
-              <p>Company</p>
-              <p>City</p>
-            </div>
+          {filteredJob.length <= 0 ? <p>You did not save any jobs!</p> : filteredJob.map((job) => <SavedJob job={job} />)}
 
-            <button>Apply!</button>
-          </div>
+          {filteredJob.length >= 1 && <div className={classes.savedJobNav}>
+            <button onClick={() => pageNavigator("-")}>Prev</button>
+            <button onClick={() => pageNavigator("+")}>Next</button>
+          </div>}
 
-          <div className={classes.savedJob}>
-            <div className={classes.jobInfo}>
-              <p>Job Title</p>
-              <p>Company</p>
-              <p>City</p>
-            </div>
 
-            <button>Apply!</button>
-          </div>
 
-          <div className={classes.savedJobNav}>
-            <button>Prev</button>
-            <button>Next</button>
-          </div>
-
-          
         </div>
 
 

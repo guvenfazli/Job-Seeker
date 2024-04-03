@@ -3,6 +3,8 @@
 
 .isSavedButton {
   bottom: 50%;
+  position: fixed;
+  right: 0;
   background-color: #37005F;
   font-family: 'Noto Sans', sans-serif;
   cursor: pointer;
@@ -20,7 +22,7 @@
   justify-content: center;
   flex-direction: row;
   font-family: 'Noto Sans', sans-serif;
-  right: -395px;
+  right: -500px;
   transition: 0.5s;
   bottom: 0%;
   width: 25%;
@@ -32,7 +34,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  bottom: 0%;
+  bottom: 0;
   right: 0px;
   transition: 0.5s;
   width: 25%;
@@ -47,6 +49,24 @@
   width: 100%;
   border: 2px solid #37005F;
   background-color: whitesmoke;
+  min-height: 20rem;
+  max-height: 30rem;
+
+}
+
+.jobListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobListHeader button{
+  background-color: #37005F;
+  font-family: 'Noto Sans', sans-serif;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
 }
 
 .title {
