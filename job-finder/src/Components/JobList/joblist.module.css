@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid red;
   background-color: rgb(226, 204, 242, 0.5);
 }
 
@@ -30,7 +29,6 @@
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid red;
   align-items: center;
 }
 

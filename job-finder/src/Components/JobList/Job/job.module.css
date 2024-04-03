@@ -13,7 +13,6 @@
   font-size: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
-  border: 1px solid red;
 }
 
 .job p {
@@ -24,33 +23,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid red;
 
 }
 
 
-
-.jobLeft div {
-  display: flex;
-}
 
 .jobImg {
   border-radius: 4rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70% 50%;
-  width: 100px;
+  width: 80px;
   height: 100px;
   margin-right: 1rem;
-
-
-}
-
-.jobLeft div img {
-  width: 100px;
-  height: 100px;
-  border-radius: 4rem;
-
+  border: 1px solid red;
 
 }
 
@@ -61,7 +47,7 @@
 
 }
 
-.jobTitle{
+.jobTitle {
   font-size: 16px;
 }
 
@@ -69,12 +55,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid red;
 
 
 }
 
-.jobRight button {
+.jobRight a {
   background-color: #6E00BE;
   border: none;
   padding: 0.7rem 2rem;
@@ -89,14 +74,13 @@
     flex-direction: column;
   }
 
-  .jobLeft{
+  .jobLeft {
     margin-bottom: 2rem;
   }
-  
+
 }
 
-@media (max-width: 720px) {
-}
+@media (max-width: 720px) {}
 
 @media (max-width: 570px) {
   .jobRight button {
@@ -130,16 +114,10 @@
   .jobLeft {
     margin-bottom: 1.5rem;
     justify-content: space-around;
-    border: 1px solid red;
     width: 100%;
   }
 
-  .jobLeft div {
-    margin-right: 0rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
+ 
 
 }
 
@@ -162,17 +140,20 @@
   .jobLeft {
     margin-bottom: 1.5rem;
     justify-content: space-around;
-    border: 1px solid red;
     width: 100%;
   }
 
 
 
-  .jobLeft div {
+  .jobDetails {
     margin-right: 0rem;
     display: flex;
     text-align: center;
     align-items: center;
+  }
+
+  .jobImg {
+    display: none;
   }
 
 }
@@ -184,7 +165,7 @@
     font-size: 12px;
   }
 
-  .jobTitle{
+  .jobTitle {
     font-size: 12px;
   }
 }

@@ -35,10 +35,10 @@ export default function JobCard({ job }) {
         <div className={classes.jobNav}>
           <div>
             {calendar}
-            <p>{postedDaysAgo}</p>
+            <p>{postedDaysAgo <= 0 ? "Recently" : postedDaysAgo + " " + "Days ago"}</p>
           </div>
 
-          <button>Apply Now</button>
+          <Link to={job.job_apply_link}><button>Apply Now</button></Link>
         </div>
       </div>
 

@@ -9,6 +9,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   border-radius: 1rem;
+  min-width: 300px;
 }
 
 .companyInfo {
@@ -45,9 +46,10 @@
 .companyImg div{
   background-color: rgb(226, 204, 242, 0.5);
   border-radius: 4rem;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  
   padding: 2rem;
   background-image: url("../../../Assets/JobListAssets/None.png");
   margin-right: 0.5rem;
@@ -104,7 +106,11 @@
 @media (max-width: 450px) {
   .card {
     width: 100%;
+    min-width: 0px;
   }
+
+  
+  
 }
 
 /* * * * * * * * * * * * * */

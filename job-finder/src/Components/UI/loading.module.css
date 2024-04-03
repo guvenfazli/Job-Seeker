@@ -1,3 +1,9 @@
+.loadingHome{
+  display: flex;
+  align-items: center;
+  min-height: 50rem;
+}
+
 .loader {
   width: 15rem;
   height: 15rem;
