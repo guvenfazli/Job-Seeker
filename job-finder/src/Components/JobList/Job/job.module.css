@@ -32,9 +32,10 @@
   border-radius: 4rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 70% 50%;
+  background-size: contain;
+  background-color: #E2CCF2;
   width: 80px;
-  height: 100px;
+  height: 80px;
   margin-right: 1rem;
   border: 1px solid red;
 

@@ -1,9 +1,7 @@
 import { useNavigation } from "react-router-dom"
 
-export default function Zest({data}){
-  const nav = useNavigation();
 
-  console.log(nav)
+export default function Zest({data}){
   
   return (
     <div>

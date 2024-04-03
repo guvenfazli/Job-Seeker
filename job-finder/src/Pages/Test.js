@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { defer, Await } from "react-router-dom";
 import { Suspense, useEffect, useRef, useState } from "react";
-
+import { SavedJobContext } from "../Store/context";
 import Zest from "../Components/Zest"
 
 export default function Test() {
@@ -26,12 +26,8 @@ export default function Test() {
     }
 
 
-
-
-    console.log(testData)
   }, [testData])
 
-  console.log(testRef.current?.innerHTML)
   const halfItems = Math.ceil(testData.length / 2)
   const halfArray = testData.slice(0, halfItems)
 

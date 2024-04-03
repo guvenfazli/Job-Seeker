@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.isSavedButton {
+  bottom: 50%;
+  background-color: #37005F;
+  font-family: 'Noto Sans', sans-serif;
+  cursor: pointer;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+
+.jobsOff {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Noto Sans', sans-serif;
+  right: -395px;
+  transition: 0.5s;
+  bottom: 0%;
+  width: 25%;
+
+}
+
+.jobsOn {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 0%;
+  right: 0px;
+  transition: 0.5s;
+  width: 25%;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+.savedJobList {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid #37005F;
+  background-color: whitesmoke;
+}
+
+.title {
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.savedJob {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  margin-bottom: 0.5rem;
+}
+
+.savedJob button {
+  background-color: #6E00BE;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+.savedJobNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.savedJobNav button {
+  background-color: #6E00BE;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: 'Noto Sans', sans-serif;
+}

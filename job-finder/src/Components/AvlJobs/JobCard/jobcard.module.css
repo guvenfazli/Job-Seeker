@@ -72,6 +72,12 @@
   display: flex;
   border-radius: 1rem;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.companyInfo button:hover{
+  background-color: #6E00BE;
+  color: white;
 }
 
 @media (max-width: 815px) {
@@ -118,6 +124,8 @@
 .jobInfo{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .job{

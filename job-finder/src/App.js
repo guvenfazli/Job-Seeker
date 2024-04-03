@@ -10,7 +10,9 @@ import Test from "./Pages/Test";
 import { loader } from "./Pages/JobListPage";
 import { deferPeople } from "./Pages/Test";
 
+/* C O N T E X T */
 
+import { SavedJobContext } from "./Store/context";
 function App() {
 
   const router = createBrowserRouter([
@@ -27,11 +29,11 @@ function App() {
 
 
   return (
-    <>
+    <SavedJobContext>
 
       <RouterProvider router={router}></RouterProvider>
 
-    </>
+    </SavedJobContext>
   );
 }
 
