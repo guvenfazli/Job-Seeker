@@ -20,17 +20,17 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
   const saveCtx = useContext(SaveContext)
   const filteredJob = saveCtx.savedJobs.slice(page.start, page.end)
 
-  function pageNavigator(navigate){
-    if(navigate === "+"){
+  function pageNavigator(navigate) {
+    if (navigate === "+") {
       setPage((prev) => {
-        let updated = {...prev}
+        let updated = { ...prev }
         updated.start += 2
         updated.end += 2
         return updated
       })
-    } else if(navigate === "-"){
+    } else if (navigate === "-") {
       setPage((prev) => {
-        let updated = {...prev}
+        let updated = { ...prev }
         updated.start -= 2
         updated.end -= 2
         return updated
@@ -40,9 +40,10 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
 
   return (
     <>
-      <button onClick={showSavedJobs} className={classes.isSavedButton}>Saved <br />Jobs</button>
 
       <div className={isOpen ? classes.jobsOn : classes.jobsOff}>
+        <button onClick={showSavedJobs} className={classes.isSavedButton}>Saved <br />Jobs</button>
+
         <div className={classes.savedJobList}>
           <div className={classes.jobListHeader}>
             <p className={classes.title}>Your Saved Jobs {`(${saveCtx.savedJobs.length})`}</p>
@@ -53,11 +54,12 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
 
           {filteredJob.length <= 0 ? <p>You did not save any jobs!</p> : filteredJob.map((job) => <SavedJob job={job} />)}
 
-          {filteredJob.length >= 1 && <div className={classes.savedJobNav}>
-            <button onClick={() => pageNavigator("-")}>Prev</button>
-            <button onClick={() => pageNavigator("+")}>Next</button>
-          </div>}
 
+
+          {filteredJob.length >= 1 && <div className={classes.savedJobNav}>
+            <button style={{display: page.start <= 0 && "none"}} onClick={() => pageNavigator("-")}>Prev</button>
+            <button style={{display: page.end >= saveCtx.savedJobs.length && "none"}} onClick={() => pageNavigator("+")}>Next</button>
+          </div>}
 
 
         </div>

@@ -80,6 +80,13 @@
   color: white;
 }
 
+.companyInfo button:disabled{
+  background-color: #FFA000;
+  color: black;
+  border: none;
+  cursor: auto;
+}
+
 @media (max-width: 815px) {
   .companyInfo button{
     padding: 0.3rem 0.3rem;

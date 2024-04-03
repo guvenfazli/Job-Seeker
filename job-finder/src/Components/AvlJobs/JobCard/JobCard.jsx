@@ -12,6 +12,7 @@ export default function JobCard({ job }) {
   const postedDaysAgo = calculateDate(job.job_posted_at_datetime_utc)
 
   const saveCtx = useContext(SaveContext)
+  const alreadySaved = saveCtx.savedJobs.some((jobCheck) => job.job_id === jobCheck.job_id)
 
 
   function saveJob(job){
@@ -35,7 +36,7 @@ export default function JobCard({ job }) {
           </div>
 
         </div>
-        <button onClick={() => saveJob(job)}>Save</button>
+        <button disabled={alreadySaved} onClick={() => saveJob(job)}>{alreadySaved ? "Saved" : "Save"}</button>
       </div>
 
       <div className={classes.jobInfo}>
