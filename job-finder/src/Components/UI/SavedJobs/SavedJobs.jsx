@@ -56,6 +56,9 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
           </div>
 
           {filteredJob.length <= 0 ? <p>You did not save any jobs!</p> : filteredJob.map((job) => <SavedJob job={job} />)}
+          <SavedJob  />
+          <SavedJob  />
+          <SavedJob  />
 
 
 

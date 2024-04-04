@@ -34,37 +34,37 @@ export default function AvlJobs() {
     setFilteredData(filteredByPostTime)
   }
 
-
-  useEffect(() => {
-
-    if (filteredData.length <= 0) {
-      async function getData() {
-        setIsLoading(true)
-        const jobData = await fetchJobs(pageNum)
-        setIsLoading(false)
-        setData(jobData.data)
+  /*
+    useEffect(() => {
+  
+      if (filteredData.length <= 0) {
+        async function getData() {
+          setIsLoading(true)
+          const jobData = await fetchJobs(pageNum)
+          setIsLoading(false)
+          setData(jobData.data)
+        }
+  
+        getData()
+  
+      } else if (filteredData.length >= 0) {
+        async function getFilteredData() {
+          setIsLoading(true)
+          const filteredJobData = await fetchFilteredJobs(pageNum)
+          const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
+          setIsLoading(false)
+          setFilteredData(filteredByPostTime)
+        }
+  
+        getFilteredData()
+  
       }
-
-      getData()
-
-    } else if (filteredData.length >= 0) {
-      async function getFilteredData() {
-        setIsLoading(true)
-        const filteredJobData = await fetchFilteredJobs(pageNum)
-        const filteredByPostTime = filteredJobData.data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
-        setIsLoading(false)
-        setFilteredData(filteredByPostTime)
-      }
-
-      getFilteredData()
-
-    }
-
-
-  }, [pageNum])
-
-
-
+  
+  
+    }, [pageNum])
+  
+  
+  */
 
 
 

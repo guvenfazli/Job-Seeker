@@ -41,7 +41,6 @@
   transition: 0.5s;
   width: 25%;
   font-family: 'Noto Sans', sans-serif;
-
 }
 
 .savedJobList {
@@ -52,7 +51,6 @@
   border: 2px solid #37005F;
   background-color: whitesmoke;
   min-height: 20rem;
-  max-height: 30rem;
 
 }
 
@@ -117,4 +115,16 @@
 
 .savedJobNav button:disabled{
   background-color: #9E7DBE;
+}
+
+@media (max-width: 1180px) {
+  .jobsOn {
+    width: 45%;
+  }
+}
+
+@media (max-width: 530px) {
+  .jobsOn {
+    width: 75%;
+  }
 }
