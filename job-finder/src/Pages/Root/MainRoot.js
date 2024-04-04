@@ -12,9 +12,6 @@ import SavedJobs from "../../Components/UI/SavedJobs/SavedJobs";
 export default function MainRoot() {
 
   const saveContext = useContext(SaveContext)
-
-  console.log(saveContext.isSavedJobs)
-
   const nav = useNavigation()
   const isLoading = nav.state === "loading"
 

@@ -31,8 +31,6 @@ export const populerList = [
   { title: "Customer Representative", jobs: 21 },
   { title: "Quality Controller", jobs: 10 },
   { title: "Proof Reader", jobs: 4 },
-  
-
 ]
 
 export const companyList = [

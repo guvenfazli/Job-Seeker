@@ -8,9 +8,6 @@ export default function JobListPage() {
 
   const data = useLoaderData()
   const searchParam = useParams();
-  console.log(data)
-
-
 
   return (
     <JobList data={data} searchParam={searchParam} />

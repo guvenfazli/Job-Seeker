@@ -1,4 +1,3 @@
-import Header from "../Components/Header/Header"
 import Home from "../Components/Home/Home"
 import Company from "../Components/Companies/Company"
 import Stats from "../Components/Stats/Stats"
@@ -9,8 +8,6 @@ import Popular from "../Components/Popular/Popular"
 import AvlJobs from "../Components/AvlJobs/AvlJobs"
 import Join from "../Components/Join/Join"
 import Footer from "../Components/Footer/Footer"
-
-import { SavedJobContext } from "../Store/context"
 
 
 export default function HomePage() {
