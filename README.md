@@ -1,4 +1,4 @@
-# Job Finder Website
+# Job Seeker Website
 ## [Live Site](linkIncoming)
 <br>
 App preview
