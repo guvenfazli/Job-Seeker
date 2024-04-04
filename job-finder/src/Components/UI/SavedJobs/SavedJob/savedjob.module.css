@@ -68,7 +68,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-top: 1px solid gray;
     margin-bottom: 0.5rem;
     flex-wrap: wrap;
   }

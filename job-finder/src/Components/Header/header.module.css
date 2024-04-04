@@ -61,21 +61,13 @@ header {
 
 @media (max-width: 720px) {
   .headerMiddle button {
-    background: none;
-    border: none;
     font-size: 12px;
-    font-family: 'Noto Sans', sans-serif;
-    color: #37005F;
     font-weight: 600;
     margin: 0 1rem;
   }
 
   .headerRight button {
-    background-color: #6E00BE;
-    color: white;
     font-size: 12px;
-    font-family: 'Noto Sans', sans-serif;
-    border: none;
     padding: 0.3rem 0.7rem;
     border-radius: 1rem;
   }

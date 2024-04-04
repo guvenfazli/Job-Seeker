@@ -91,7 +91,6 @@
   .companyInfo button{
     padding: 0.3rem 0.3rem;
     font-size: 12px;
-    cursor: pointer;
   }
 
 
@@ -101,7 +100,6 @@
   .companyInfo button{
     padding: 0.5rem 0.5rem;
     font-size: 10px;
-    cursor: pointer;
   }
   .card {
     width: 50%;

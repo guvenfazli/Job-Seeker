@@ -84,9 +84,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #37005F;
-    font-family: "Noto Sans", sans-serif;
-    color: white;
   }
 }
 
@@ -114,8 +111,5 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #37005F;
-    font-family: "Noto Sans", sans-serif;
-    color: white;
   }
 }

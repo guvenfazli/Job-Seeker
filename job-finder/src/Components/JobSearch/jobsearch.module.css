@@ -133,11 +133,6 @@
     height: 2rem;
     width: 100%;
     padding-left: 1rem;
-    border: none;
-    color: gray;
-    font-weight: bold;
-    font-family: 'Noto Sans', sans-serif;
-    outline: none;
   }
 
 }
@@ -183,7 +178,7 @@
 }
 
 @media (max-width: 380px) {
-  .inputCont button {
+  .inputCont a {
     width: 40%;
     font-size: 12px;
     border-radius: 3rem;
