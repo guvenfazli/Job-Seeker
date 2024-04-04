@@ -34,7 +34,7 @@ export default function AvlJobs() {
     setFilteredData(filteredByPostTime)
   }
 
-  /*
+  
     useEffect(() => {
   
       if (filteredData.length <= 0) {
@@ -64,7 +64,7 @@ export default function AvlJobs() {
     }, [pageNum])
   
   
-  */
+  
 
 
 

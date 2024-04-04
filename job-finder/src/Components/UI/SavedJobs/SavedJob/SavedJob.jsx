@@ -5,8 +5,9 @@ import { Link } from "react-router-dom"
 
 export default function SavedJob({ job }) {
 
-  /* 
-      <div className={classes.savedJob}>
+
+  return (
+    <div className={classes.savedJob}>
       <div className={classes.jobInfo}>
         <p>{job.job_title}</p>
         <p>{job.employer_name}</p>
@@ -14,24 +15,8 @@ export default function SavedJob({ job }) {
       </div>
 
       <Link target="_blank" to={job.job_apply_link}><button>Apply!</button></Link>
+      <button className={classes.removeBtn}>Remove</button>
     </div>
-  
-  */
 
-
-
-
-
-
-  return (
-    <div className={classes.savedJob}>
-      <div className={classes.jobInfo}>
-        <p>job.job_title</p>
-        <p>job.job_employer_name</p>
-        <p>job.job_city</p>
-      </div>
-
-      <button>Apply!</button>
-    </div>
   )
 }

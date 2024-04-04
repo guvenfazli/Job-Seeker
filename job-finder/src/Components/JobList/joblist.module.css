@@ -30,6 +30,19 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.jobListNav{
+  display: flex;
+  justify-content: center;
+}
+
+.jobListNav p{
+  font-size: 24px;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+
 }
 
 @media (max-width: 720px) {

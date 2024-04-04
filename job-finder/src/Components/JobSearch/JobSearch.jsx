@@ -4,6 +4,8 @@ import classes from "./jobsearch.module.css"
 import { useRef, useState } from "react"
 import { Link } from "react-router-dom";
 
+/* U T I L S */
+import { fixUrlParam } from "../../Utils/fixUrlParams";
 
 export default function JobSearch() {
 
@@ -12,13 +14,10 @@ export default function JobSearch() {
   const country = useRef();
 
   function setSearchLink() {
-    const jobTitleFormat = jobTitle.current?.value.replaceAll(/ /g, "%20")
-    const countryFormat = country.current?.value.replaceAll(" ", "%20")
-    const formatJob = jobTitleFormat + "%20" + countryFormat
+    const formatJob = fixUrlParam(jobTitle, country)
     setSearchParams(formatJob)
   }
 
-  console.log(searchParams)
 
   return (
 

@@ -1,4 +1,3 @@
-
 export default async function fetchJobs(pageNum) {
   const options = {
     method: 'GET',
@@ -12,7 +11,6 @@ export default async function fetchJobs(pageNum) {
   return resData;
 }
 
-
 export async function fetchJobsByParams(params) {
   const options = {
     method: 'GET',
@@ -24,7 +22,7 @@ export async function fetchJobsByParams(params) {
 
   const searchValue = params.replaceAll(" ", "%20")
 
-  const response = await fetch(`https://jsearch.p.rapidapi.com/search?query=${searchValue}&page=1`, options);
+  const response = await fetch(`https://jsearch.p.rapidapi.com/search?query=${searchValue}&page=1&num_pages=10`, options);
   const resData = await response.json()
   return resData;
 

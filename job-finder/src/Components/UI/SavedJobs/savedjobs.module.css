@@ -28,7 +28,7 @@
   transition: 0.5s;
   bottom: 0%;
   width: 25%;
-
+  z-index: 200;
 }
 
 .jobsOn {
@@ -41,6 +41,7 @@
   transition: 0.5s;
   width: 25%;
   font-family: 'Noto Sans', sans-serif;
+  z-index: 200;
 }
 
 .savedJobList {
@@ -120,6 +121,12 @@
 @media (max-width: 1180px) {
   .jobsOn {
     width: 45%;
+  }
+}
+
+@media (max-width: 780px) {
+  .jobsOn {
+    width: 70%;
   }
 }
 

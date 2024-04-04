@@ -5,7 +5,6 @@
   width: 100%;
   border: 2px solid #37005F;
   background-color: whitesmoke;
-  
 }
 
 .title {
@@ -13,7 +12,6 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  border: 1px solid red;
 }
 
 .savedJob {
@@ -23,14 +21,11 @@
   align-items: center;
   border-top: 1px solid gray;
   margin-bottom: 0.5rem;
-  border: 1px solid red;
-  flex-wrap: wrap;
 }
 
 .jobInfo{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .savedJob button {
@@ -41,9 +36,10 @@
   border: none;
   border-radius: 2rem;
   font-family: 'Noto Sans', sans-serif;
-  border: 1px solid red;
+}
 
-
+.removeBtn{
+  margin-left: 0.5rem;
 }
 
 .savedJobNav {
@@ -61,6 +57,7 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+
 @media (max-width: 700px) {
   .savedJob {
     display: flex;
@@ -69,8 +66,12 @@
     align-items: center;
     border-top: 1px solid gray;
     margin-bottom: 0.5rem;
-    border: 1px solid red;
     flex-wrap: wrap;
+  }
+
+  .removeBtn{
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
 
