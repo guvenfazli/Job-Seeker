@@ -28,6 +28,10 @@
   flex-direction: column;
 }
 
+.savedJobAction {
+  display: flex;
+}
+
 .savedJob button {
   background-color: #6E00BE;
   color: white;
@@ -67,6 +71,12 @@
     border-top: 1px solid gray;
     margin-bottom: 0.5rem;
     flex-wrap: wrap;
+  }
+
+  .savedJobAction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .removeBtn{

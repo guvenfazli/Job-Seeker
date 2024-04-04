@@ -61,10 +61,10 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
 
 
 
-          {filteredJob.length >= 1 && <div className={classes.savedJobNav}>
+          <div className={classes.savedJobNav}>
             <button disabled={page.start <= 0} onClick={() => pageNavigator("-")}>Prev</button>
             <button disabled={page.end >= saveCtx.savedJobs.length} onClick={() => pageNavigator("+")}>Next</button>
-          </div>}
+          </div>
 
 
         </div>
