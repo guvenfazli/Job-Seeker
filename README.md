@@ -11,6 +11,7 @@ App preview
 
 - Using React Router DOM and useLoaderData to render data with fast API.
 - Implement Advanced Search Functionality
+- Fast Search with popular job tags.
 - Create Filtering Capabilities
 - Optimize Metadata and SEO
 - Create custom filter, combobox, and modal elements
