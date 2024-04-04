@@ -38,11 +38,20 @@
   justify-content: center;
 }
 
-.jobListNav p{
-  font-size: 24px;
+.jobListNav button{
+  font-size: 20px;
+  background-color: #37005F;
   font-family: "Noto Sans", sans-serif;
   cursor: pointer;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
 
+}
+
+.jobListNav button:disabled{
+  background-color: #9E7DBE;
 }
 
 @media (max-width: 720px) {

@@ -34,7 +34,7 @@ export default function JobList({ data, searchParam }) {
         {limitedJobs.map((job) => <Job key={job.job_id} job={job} />)}
       </div>
       <div className={classes.jobListNav}>
-        <p onClick={() => showMoreJobs()}>Show More</p>
+        <button disabled={showMore.end >= data.data.length} onClick={() => showMoreJobs()}>Show More</button>
       </div>
     </section>
   )
