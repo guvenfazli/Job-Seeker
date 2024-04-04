@@ -1,24 +1,16 @@
 import classes from "./home.module.css"
+
+/* H O O K S */
+import { useRef, useState } from "react"
+import { Link } from "react-router-dom"
+
+
+/* A S S E T S */
 import icon from "../../Assets/HomeAssets/LogoIcon.png"
 import logo from "../../Assets/HomeAssets/Logo.png"
 
-import { useEffect, useRef, useState } from "react"
-import { Link } from "react-router-dom"
 
-import SaveContext from "../../Store/context"
-import { useContext } from "react"
 export default function Home() {
-
-  const saveCtx = useContext(SaveContext)
-
-  console.log(saveCtx.savedJobs)
-
-  const [test, setTest] = useState(localStorage.getItem("saved"));
-
-  useEffect(() => {
-    console.log(test)
-  }, [test])
-
 
   const [searchParams, setSearchParams] = useState()
   const jobTitle = useRef();
@@ -49,16 +41,11 @@ export default function Home() {
 
       <div className={classes.homeRight}>
         <div className={classes.logoConteiner}>
-
           <div style={{ backgroundImage: `url(${icon})` }} />
 
-
           <div style={{ backgroundImage: `url(${logo})` }} />
-
         </div>
       </div>
-
-
     </section>
   )
 }

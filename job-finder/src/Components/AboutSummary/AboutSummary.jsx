@@ -1,4 +1,6 @@
 import classes from "./aboutsummary.module.css"
+
+/* A S S E T S */
 import hands from "../../Assets/SummaryAssets/handShake.png"
 import bag from "../../Assets/SummaryAssets/fileBag.png"
 import bubble from "../../Assets/SummaryAssets/messageBubble.png"

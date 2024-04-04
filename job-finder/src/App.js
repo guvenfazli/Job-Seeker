@@ -4,15 +4,13 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import MainRoot from "./Pages/Root/MainRoot";
 import HomePage from "./Pages/HomePage";
 import JobListPage from "./Pages/JobListPage";
-import Test from "./Pages/Test";
 
 /* L O A D E R S */
 import { loader } from "./Pages/JobListPage";
-import { deferPeople } from "./Pages/Test";
 
 /* C O N T E X T */
-
 import { SavedJobContext } from "./Store/context";
+
 function App() {
 
   const router = createBrowserRouter([
@@ -20,19 +18,13 @@ function App() {
       path: '/', element: <MainRoot />, children: [
         { index: true, element: <HomePage />, },
         { path: ':jobName', element: <JobListPage />, loader: loader},
-
       ]
     },
-    { path: '/test', element: <Test />, loader: deferPeople}
-
   ])
-
 
   return (
     <SavedJobContext>
-
       <RouterProvider router={router}></RouterProvider>
-
     </SavedJobContext>
   );
 }

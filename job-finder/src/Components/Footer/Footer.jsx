@@ -1,4 +1,6 @@
 import classes from "./footer.module.css"
+
+/* A S S E T S */
 import logo from "../../Assets/FooterAssets/logo.png"
 import { fb, insta, yt, tw, linked } from "./footerIcons"
 

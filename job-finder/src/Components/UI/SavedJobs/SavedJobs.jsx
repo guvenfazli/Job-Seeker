@@ -1,10 +1,13 @@
 import classes from "./savedjobs.module.css"
+
+/* C O M P O N E N T S */
 import SavedJob from "./SavedJob/SavedJob"
+
+/* U T I L S */
 import SaveContext from "../../../Store/context"
+
+/* H O O K S */
 import { useContext, useState } from "react"
-
-
-
 
 export default function SavedJobs({ isOpen, setIsOpen }) {
 
@@ -42,7 +45,7 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
     <>
 
       <div className={isOpen ? classes.jobsOn : classes.jobsOff}>
-        <button onClick={showSavedJobs} className={classes.isSavedButton}>Saved <br />Jobs</button>
+        <button onClick={showSavedJobs} style={{ right: isOpen && "-100px" }} className={classes.isSavedButton}>Saved <br />Jobs</button>
 
         <div className={classes.savedJobList}>
           <div className={classes.jobListHeader}>
@@ -57,8 +60,8 @@ export default function SavedJobs({ isOpen, setIsOpen }) {
 
 
           {filteredJob.length >= 1 && <div className={classes.savedJobNav}>
-            <button style={{display: page.start <= 0 && "none"}} onClick={() => pageNavigator("-")}>Prev</button>
-            <button style={{display: page.end >= saveCtx.savedJobs.length && "none"}} onClick={() => pageNavigator("+")}>Next</button>
+            <button disabled={page.start <= 0} onClick={() => pageNavigator("-")}>Prev</button>
+            <button disabled={page.end >= saveCtx.savedJobs.length} onClick={() => pageNavigator("+")}>Next</button>
           </div>}
 
 

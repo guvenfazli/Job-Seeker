@@ -1,6 +1,9 @@
 import classes from "./savedjob.module.css"
 
-export default function SavedJob({job}) {
+/* H O O K S */
+import { Link } from "react-router-dom"
+
+export default function SavedJob({ job }) {
   return (
     <div className={classes.savedJob}>
       <div className={classes.jobInfo}>
@@ -9,7 +12,7 @@ export default function SavedJob({job}) {
         <p>{job.job_city}</p>
       </div>
 
-      <button>Apply!</button>
+      <Link target="_blank" to={job.job_apply_link}><button>Apply!</button></Link>
     </div>
   )
 }

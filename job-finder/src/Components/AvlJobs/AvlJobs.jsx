@@ -1,10 +1,18 @@
 import classes from "./avljobs.module.css"
-import JobCard from "./JobCard/JobCard"
-import { useState, useEffect, useContext } from "react"
-import fetchJobs, { fetchFilteredJobs } from "../../Utils/fetchData"
+/* H O O K S */
+import { useState, useEffect } from "react"
+
+/* C O M P O N E N T S */
 import Loading from "../UI/Loading"
-import SaveContext from "../../Store/context"
+import JobCard from "./JobCard/JobCard"
+
+/* U T I L S */
+import fetchJobs, { fetchFilteredJobs } from "../../Utils/fetchData"
+
+
+/* A S S E T S */
 import { leftArrow, rightArrow } from "./AvlJobsIcons"
+
 
 export default function AvlJobs() {
 
@@ -25,10 +33,6 @@ export default function AvlJobs() {
     const filteredByPostTime = data.sort((a, b) => b.job_posted_at_timestamp - a.job_posted_at_timestamp)
     setFilteredData(filteredByPostTime)
   }
-
-  const saveCtx = useContext(SaveContext)
-
-
 
 
   useEffect(() => {

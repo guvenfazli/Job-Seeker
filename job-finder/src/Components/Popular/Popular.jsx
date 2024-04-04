@@ -1,8 +1,13 @@
 import classes from "./popular.module.css"
+
+/* C O M P O N E N T S */
 import Tags from "./Tags/Tags"
-import { populerList } from "../../Datas/data"
+
+/* H O O K S */
 import { useState } from "react"
 
+/* U T I L S */
+import { populerList } from "../../Datas/data"
 
 export default function Popular() {
    const [more, setMore] = useState({

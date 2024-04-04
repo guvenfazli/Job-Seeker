@@ -1,5 +1,6 @@
 import classes from "./company.module.css"
 
+/* A S S E T S */
 import { companyList } from "../../Datas/data"
 import CompanyCase from "./Company/Company"
 

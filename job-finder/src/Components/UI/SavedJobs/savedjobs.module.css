@@ -13,7 +13,9 @@
   color: white;
   border: none;
   padding: 1rem;
+  transition: 0.5s;
 }
+
 
 .jobsOff {
   position: fixed;
@@ -110,4 +112,9 @@
   border: none;
   border-radius: 0.3rem;
   font-family: 'Noto Sans', sans-serif;
+  transition: 0.2s;
+}
+
+.savedJobNav button:disabled{
+  background-color: #9E7DBE;
 }

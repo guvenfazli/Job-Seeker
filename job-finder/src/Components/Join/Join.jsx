@@ -1,6 +1,5 @@
 import classes from "./join.module.css"
 
-
 export default function Join() {
   return (
     <section className={classes.joinSection}>

@@ -1,5 +1,6 @@
 import classes from "./jobsearch.module.css"
-import search from "../../Assets/JobSearchAssets/SearchIcon.png"
+
+/* H O O K S */
 import { useRef, useState } from "react"
 import { Link } from "react-router-dom";
 

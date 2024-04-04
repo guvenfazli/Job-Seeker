@@ -1,5 +1,7 @@
 import classes from "./joblist.module.css"
+/* C O M P O N E N T S */
 import Job from "./Job/Job"
+
 export default function JobList({ data, searchParam }) {
 
   return (
