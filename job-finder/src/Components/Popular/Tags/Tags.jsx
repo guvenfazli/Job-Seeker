@@ -8,7 +8,7 @@ export default function Tags({ tags, jobs }) {
   const formatTag = tags.replaceAll(" ", "%20")
   
   return (
-    <Link target="_blank" to={formatTag}>
+    <Link target="_blank" to={`${formatTag}`}>
       <button className={classes.tag}>
         <p>{tags}</p>
         <span className={classes.job}>{jobs}</span>
