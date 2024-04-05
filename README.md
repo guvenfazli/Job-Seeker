@@ -14,6 +14,6 @@ App preview
 - Fast Search with popular job tags.
 - Create Filtering Capabilities
 - Optimize Metadata and SEO
-- Create custom filter, combobox, and modal elements
+- Create custom filter.
 - Maintain a well-organized file and folder structure.
 - Embrace the principles of writing clean code.
