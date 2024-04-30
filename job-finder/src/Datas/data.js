@@ -7,7 +7,7 @@ import slack from "../Assets/CompanyAssets/Slack.png"
 
 export const populerList = [
   { title: "Fullstack Developer", jobs: 552 },
-  { title: "UI/UX Designer", jobs: 450 },
+  { title: "UI Designer", jobs: 450 },
   { title: "iOS Developer", jobs: 409 },
   { title: "Web Designer", jobs: 349 },
   { title: "Copywriter", jobs: 300 },
